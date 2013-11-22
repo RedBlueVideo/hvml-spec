@@ -3,7 +3,7 @@ OVML – Open Video Markup Language
 
 OVML is an XML-based markup language for codifying information pertaining to audio-visual media such as films, television, home movies, or any other moving image, digital or analog.
 
-Its primary intent is to provide a standardized syntax and interface for storing and querying video metadata. The type of data is similar to that found on [IMDb](http://www.imdb.com/), [TMDb](http://www.themoviedb.org/), [Wikipedia](http://www.wikipedia.org/), and [Amazon](http://www.amazon.com/); its aim comparable to [MPEG-7](http://mpeg.chiariglione.org/standards/mpeg-7), but more limited in scope (to be easier for humans to understand and author), and being completely public domain.
+Its primary intent is to provide a standardized syntax and interface for storing and querying video metadata. The type of data is similar to that found on [IMDb](http://www.imdb.com/), [TMDb](http://www.themoviedb.org/), [Wikipedia](http://www.wikipedia.org/), and [Amazon](http://www.amazon.com/); its aim comparable to [MPEG-7](http://mpeg.chiariglione.org/standards/mpeg-7), but more limited in scope (to be easier for humans to understand and author), and being completely unencumbered by patents.
 
 Possible uses:
 
