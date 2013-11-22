@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ovml xmlns="http://vocab.nospoon.tv/ovml#"><glossary xml:id="mpaa" for="rating" party="3rd">
+<ovml xmlns="http://vocab.nospoon.tv/ovml#">
+	<glossary xml:id="mpaa" for="rating" party="3rd">
 		<title>MPAA Ratings</title>
-		<entity><name>Motion Picture Association of America</name>
+		<entity>
+			<name>Motion Picture Association of America</name>
 			<nickname>MPAA</nickname>
 			<site title="MPAA.org">http://www.mpaa.org</site>
 		</entity>
@@ -128,7 +130,7 @@
 			<rating code="N" maturity="0.5" color="yellow">
 				<title>Minimal covering</title>
 				<description>Content rated N may contain individuals who are minimally clothed (e.g., low cut tops, underwear or revealing bathing suits). Content rated N should not contain any fleeting or prolonged nudity, including exposed buttocks, genitalia, or areola.</description>
-				</rating>
+			</rating>
 			<rating code="N+" maturity="1" color="red">
 				<title>Some nudity</title>
 				<description>Content rated N+ may include content featuring exposed buttocks or partially nude breasts. Content rated N+ may also contain full nudity where the context is appropriately educational, documentary or artistic.</description>
@@ -163,9 +165,9 @@
 			</rating>
 		</group>
 		<group type="drugs">
-			<rating code="D-" title="No drug abuse" maturity="0" color="green">Content rated No drug abuse should be free of any drug abuse. However, fleeting and moderate consumption of alcohol or tobacco by adults as well as responsible use of medications may appear. </rating>
-			<rating code="D" title="Mild drug use" maturity="0.5" color="yellow">Content rated D may contain mild drug use, including excessive or persistent consumption of alcohol or tobacco. It also may include incidental or comedic use of drugs such as marijuana, sativa, hallucinogens or prescription pharmaceuticals. Implied, non-graphic use of other drugs, such as heroin, may be rated D as well. </rating>
-			<rating code="D+" title="Drug use" maturity="1" color="red">Content rated D+ may contain graphic, fictional depictions of drug abuse and display of drug paraphernalia. Content rated D+ may also contain actual depictions of drug abuse where the context is appropriately educational, documentary or scientific. </rating>
+			<rating code="D-" title="No drug abuse" maturity="0" color="green">Content rated No drug abuse should be free of any drug abuse. However, fleeting and moderate consumption of alcohol or tobacco by adults as well as responsible use of medications may appear.</rating>
+			<rating code="D" title="Mild drug use" maturity="0.5" color="yellow">Content rated D may contain mild drug use, including excessive or persistent consumption of alcohol or tobacco. It also may include incidental or comedic use of drugs such as marijuana, sativa, hallucinogens or prescription pharmaceuticals. Implied, non-graphic use of other drugs, such as heroin, may be rated D as well.</rating>
+			<rating code="D+" title="Drug use" maturity="1" color="red">Content rated D+ may contain graphic, fictional depictions of drug abuse and display of drug paraphernalia. Content rated D+ may also contain actual depictions of drug abuse where the context is appropriately educational, documentary or scientific.</rating>
 		</group>
 		<rating code="F" type="health">
 			<title>Flashing or strobing light</title>
@@ -200,28 +202,35 @@
 		-->
 		<group type="scale">
 			<score xml:id="nstv-ma" code="Ma" rank="1">
-				<title>Masterpiece</title><!-- Phenomenal -->
+				<title>Masterpiece</title>
+				<!-- Phenomenal -->
 			</score>
 			<score xml:id="nstv-s" code="S" rank="0.875">
-				<title>Sublime</title><!-- Amazing -->
+				<title>Sublime</title>
+				<!-- Amazing -->
 			</score>
 			<score xml:id="nstv-ti" code="Ti" rank="0.75">
-				<title>Tight</title><!-- Good -->
+				<title>Tight</title>
+				<!-- Good -->
 			</score>
 			<score xml:id="nstv-nh" code="NH" rank="0.625">
-				<title>Not Heinous</title><!-- Pretty Good -->
+				<title>Not Heinous</title>
+				<!-- Pretty Good -->
 			</score>
 			<score xml:id="nstv-m" code="M" rank="0.5">
 				<title>Mediocre</title>
 			</score>
 			<score xml:id="nstv-a" code="A" rank="0.375">
-				<title>A’ight</title><!-- Tolerable -->
+				<title>A’ight</title>
+				<!-- Tolerable -->
 			</score>
 			<score xml:id="nstv-tr" code="Tra" rank="0.25">
-				<title>Trash</title><!-- Bad -->
+				<title>Trash</title>
+				<!-- Bad -->
 			</score>
 			<score xml:id="nstv-tri" code="Tri" rank="0.125">
-				<title>Tripe</title><!-- Horrible -->
+				<title>Tripe</title>
+				<!-- Horrible -->
 			</score>
 			<score xml:id="nstv-u" code="U" rank="0">
 				<title>Unwatchable</title>
@@ -254,17 +263,17 @@
 	<glossary for="medium">
 		<medium xml:id="dvd" code="DVD">
 			<title>Digital Versatile Disc</title>
-			<format><tag>physical</tag>
+			<format>
+				<tag>physical</tag>
 				<tag>disc</tag>
 			</format>
-			<description/>
+			<description />
 		</medium>
 	</glossary>
 	<glossary for="sync" xml:id="services">
 		<service xml:id="twitter">
 			<title>Twitter</title>
 			<limit>140</limit>
-			
 		</service>
 	</glossary>
 </ovml>
