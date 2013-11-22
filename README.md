@@ -14,7 +14,7 @@ Possible uses:
 - Historians wishing to catalog the world’s films.
 - Archivists wishing to catalog internal libraries (such as the [HFA](http://hcl.harvard.edu/hfa/)).
 - Video content authors wishing to store information about their films.
-- Content publishers wishing to store/query/display information about video media being displayed and/or discussed.
+- Content publishers wishing to store/query/display information about video media being delivered and/or discussed.
 - Educators and students wishing to teach or understand the minute details of films and video.
 - Programmers wishing to ingest, convert, display, or splice video files who must reference technical details like frame rate or pixel aspect ratio without relying on the often erroneous or incomplete information reported by the container.
 
