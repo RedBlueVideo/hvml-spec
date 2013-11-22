@@ -1,211 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Content-type: application/ovml+xml; charset=UTF-8; -->
 <ovml xmlns="http://vocab.nospoon.tv/ovml#">
-	<meta>
-		<link rel="glossary" href="/glossary.ovml" />
-		<link title="IMDb" rel="info" href="http://www.imdb.com/title/tt0780504/" />
-		<link title="TMDb" rel="info" href="http://www.themoviedb.org/movie/64690-drive" />
-		<link title="Wikipedia" rel="info" href="http://en.wikipedia.org/wiki/Drive_(2011_film)" />
-		<link title="Amazon" rel="shop affiliate" href="http://www.amazon.com/Drive-UltraViolet-Digital-Copy-Blu-ray/dp/B0064NTZJO%3FSubscriptionId%3DAKIAIH55RAJODGWTXQLQ%26tag%3Dnospotv-20%26linkCode%3Dsp1%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0064NTZJO" />
-	</meta>
-	<!-- video = any creative work whose canonical representation is motion-based (visual changes over time) -->
-	<video type="feature" xml:lang="en" xml:id="drive-2011">
-		<!-- short | feature | series | ad | personal | historical. personal = ugc, home movies. historical = library, news -->
-		<urn />
-		<title>Drive</title>
-		<title xml:lang="ru">Драйв</title>
-		<runtime>98</runtime>
-		<!-- defaults to minutes; can optionally be expressed as iso 8601 duration -->
-		<published>2011-05-20</published>
-		<!-- Date of, or generally regarded as, first public release -->
-		<director>Nicolas Winding Refn</director>
-		<producer>
-			<entity>Michel Litvak</entity>
-			<!-- name = legal, sovereign, or other entity. @type = human [default] | robot | org -->
-			<entity>John Palermo</entity>
-			<entity>Marc Platt</entity>
-			<entity>Gigi Pritzker</entity>
-			<entity>Adam Siegel</entity>
-		</producer>
-		<!-- Only one writer:
-		<writer>Hossein Amini</writer>
-		-->
-		<!-- Two writers:
-		<writer>
-			<entity>Hossein Amini</entity>
-			<entity>James Sallis</entity>
-		</writer>
-		-->
-		<!-- One screenplay writer and one book writer; screenplay was derived from book: -->
-		<writer>
-			<!--
-			<document type="book" xml:id="novelization">
-				<entity>Some bro</entity>
-				<parent rel="screenplay" />
-			</document>
-			-->
-			<work xml:id="drive-2011-screenplay">
-				<!-- implied type="screenplay" -->
-				<entity>
-					<name>
-						<family-name>Hossein</family-name>
-						<!-- Only useful in cases where this would otherwise be ambiguous, e.g. Asian names  -->
-						<given-name>Amini</given-name>
-					</name>
-					<credit>Screenplay by</credit>
-					<!-- redundant; implied. Allows author to insert esoteric credits w/o e.g. codifying all WGA idiosyncracies. -->
-				</entity>
-				<link rel="derived-from" href="#drive-2005-book" />
-				<!-- based on -->
-			</work>
-			<!-- Smart rendering: 
-				[/credit or @type] [ent] [/@derived-from] [#book/itemTitle] by [#book/entity]
-				Screenplay by Hossein Amini based on the original story by James Sallis
-			-->
-			<work xml:id="drive-2005-book" type="novel">
-				<!-- novel | screenplay | stageplay | teleplay | audioplay | memoir | biography | autobiography | poem | short-story -->
-				<title>Drive</title>
-				<published>2005</published>
-				<entity>James Sallis</entity>
-				<item-title>original story</item-title>
-				<link rel="derivative" href="#drive-2011-screenplay" />
-			</work>
-		</writer>
-		<actor>
-			<starring>
-				<character>
-					<name>Driver</name>
-					<entity>Ryan Gosling</entity>
-				</character>
-				<character>
-					<name>Irene</name>
-					<entity>Carey Mulligan</entity>
-				</character>
-				<character>
-					<name>Shannon</name>
-					<entity>Bryan Cranston</entity>
-				</character>
-				<character>
-					<name>Blanche</name>
-					<entity>Christina Hendricks</entity>
-				</character>
-				<character>
-					<name>Nino</name>
-					<entity>Ron Perlman</entity>
-				</character>
-				<character>
-					<name>Standard</name>
-					<entity>Oscar Isaac</entity>
-				</character>
-				<character>
-					<name>Bernie Rose</name>
-					<entity>Albert Brooks</entity>
-				</character>
-			</starring>
-			<!--background-->
-			<character>
-				<name>Tan Suit</name>
-				<entity>Jeff Wolfe</entity>
-			</character>
-			<!--/background-->
-		</actor>
-		<composer>
-			<entity>Cliff Martinez</entity>
-		</composer>
-		<cinematographer>
-			<entity>Newton Thomas Sigel</entity>
-			<!--credit>Camera Operator</credit-->
-		</cinematographer>
-		<editor>
-			<entity>Matthew Newman</entity>
-		</editor>
-		<studio>
-			<entity>Bold Films</entity>
-			<!-- entity = legal entity; an individual, partnership, corporation, or nonprofit -->
-			<entity>Odd Lot Entertainment</entity>
-			<entity>Marc Platt Productions</entity>
-			<entity>Seed Productions</entity>
-		</studio>
-		<distributor>FilmDistrict</distributor>
-		<!-- scope = release [fuzzy/global] | screening [specific/local] -->
-		<showing scope="release" type="theatrical" admission="public" datetime="2011-05-20" locale="en-FR">
-			<function>
-				<!-- function vs. venue = event / specific building where an event is held -->
-				<name xml:lang="fr">Festival de Cannes</name>
-				<nickname>Cannes</nickname>
-				<site>http://www.festival-cannes.com/</site>
-			</function>
-			<medium>film</medium>
-		</showing>
-		<showing scope="screening" type="theatrical" admission="private" datetime="2011-09-16" locale="en-US">
-			<medium>film</medium>
-		</showing>
-		<finance>
-			<!-- currency="USD" -->
-			<budget>15000000</budget>
-			<net />
-			<gross>76175166</gross>
-		</finance>
-		<genre>
-			<tag>neo-noir</tag>
-			<tag>crime</tag>
-			<tag>thriller</tag>
-		</genre>
-		<rating glossary="#mpaa" code="R">
-			<!--
-			@glossary = lazy linking, specify @code or /rating/@code
-			@href = direct linking, specify in URI but must have xml:id explicitly set. @href="#mpaa-r"
-		-->
-			<!-- TV-PG-SLD
-			<rating code="TV-PG">
-				<rating code="S" />
-				<rating code="L" />
-				<rating code="D" />
-			</rating>
-			-->
-			<reason>strong brutal bloody violence, language and some nudity</reason>
-			<!-- predicate only  -->
-		</rating>
-		<score glossary="#nstv" code="F" />
-		<description>A mysterious Hollywood stuntman, mechanic and getaway driver lands himself in trouble when he helps out his neighbor.</description>
-		<!--summary>Film District presents a film directed by Nicolas Winding Refn. Written by Hossein Amini, based on the novel by James Sallis.</summary-->
-		<recognition datetime="2012" type="award" result="lose">
-			<!-- result = win | lose | tie | other -->
-			<!--
-			Year, Result, Award, Category, Recipients
-			-->
-			<from>
-				<entity href="#ampas" />
-			</from>
-			<to>
-				<entity>Lon Bender</entity>
-				<entity>Victor Ray Ennis</entity>
-				<category>Best Achievement in Sound Editing</category>
-			</to>
-		</recognition>
-		<recognition datetime="2011" type="award" result="win">
-			<!-- type = award | selection | review | quote. default = award. -->
-			<from>Austin Film Critics Association</from>
-			<to>
-				<entity>Nicolas Winding Refn</entity>
-				<category>Best Director</category>
-			</to>
-			<to>
-				<entity>Hossein Amini</entity>
-				<category>Best Screenplay, Adapted</category>
-			</to>
-			<to>
-				<entity>Albert Brooks</entity>
-				<category>Best Supporting Actor</category>
-			</to>
-		</recognition>
-		<recognition datetime="2011" type="award" result="2nd">
-			<from>Austin Film Critics Association</from>
-			<to>
-				<entity href="#drive-2011" />
-				<category>Best Film</category>
-			</to>
-		</recognition>
-		<production />
-	</video>
+  <meta>
+    <link rel="glossary" href="/glossary.ovml" />
+    <link title="IMDb" rel="info" href="http://www.imdb.com/title/tt0780504/" />
+    <link title="TMDb" rel="info" href="http://www.themoviedb.org/movie/64690-drive" />
+    <link title="Wikipedia" rel="info" href="http://en.wikipedia.org/wiki/Drive_(2011_film)" />
+    <link title="Amazon" rel="shop affiliate" href="http://www.amazon.com/Drive-UltraViolet-Digital-Copy-Blu-ray/dp/B0064NTZJO%3FSubscriptionId%3DAKIAIH55RAJODGWTXQLQ%26tag%3Dnospotv-20%26linkCode%3Dsp1%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0064NTZJO" />
+  </meta>
+  <!-- video = any creative work whose canonical representation is motion-based (visual changes over time) -->
+  <video type="feature" xml:lang="en" xml:id="drive-2011">
+    <!-- short | feature | series | ad | personal | historical. personal = ugc, home movies. historical = library, news -->
+    <urn />
+    <title>Drive</title>
+    <title xml:lang="ru">Драйв</title>
+    <runtime>98</runtime>
+    <!-- defaults to minutes; can optionally be expressed as iso 8601 duration -->
+    <published>2011-05-20</published>
+    <!-- Date of, or generally regarded as, first public release -->
+    <director>Nicolas Winding Refn</director>
+    <producer>
+      <entity>Michel Litvak</entity>
+      <!-- name = legal, sovereign, or other entity. @type = human [default] | robot | org -->
+      <entity>John Palermo</entity>
+      <entity>Marc Platt</entity>
+      <entity>Gigi Pritzker</entity>
+      <entity>Adam Siegel</entity>
+    </producer>
+    <!-- Only one writer:
+    <writer>Hossein Amini</writer>
+    -->
+    <!-- Two writers:
+    <writer>
+      <entity>Hossein Amini</entity>
+      <entity>James Sallis</entity>
+    </writer>
+    -->
+    <!-- One screenplay writer and one book writer; screenplay was derived from book: -->
+    <writer>
+      <!--
+      <document type="book" xml:id="novelization">
+        <entity>Some bro</entity>
+        <parent rel="screenplay" />
+      </document>
+      -->
+      <work xml:id="drive-2011-screenplay">
+        <!-- implied type="screenplay" -->
+        <entity>
+          <name>
+            <family-name>Hossein</family-name>
+            <!-- Only useful in cases where this would otherwise be ambiguous, e.g. Asian names  -->
+            <given-name>Amini</given-name>
+          </name>
+          <credit>Screenplay by</credit>
+          <!-- redundant; implied. Allows author to insert esoteric credits w/o e.g. codifying all WGA idiosyncracies. -->
+        </entity>
+        <link rel="derived-from" href="#drive-2005-book" />
+        <!-- based on -->
+      </work>
+      <!-- Smart rendering: 
+        [/credit or @type] [ent] [/@derived-from] [#book/itemTitle] by [#book/entity]
+        Screenplay by Hossein Amini based on the original story by James Sallis
+      -->
+      <work xml:id="drive-2005-book" type="novel">
+        <!-- novel | screenplay | stageplay | teleplay | audioplay | memoir | biography | autobiography | poem | short-story -->
+        <title>Drive</title>
+        <published>2005</published>
+        <entity>James Sallis</entity>
+        <item-title>original story</item-title>
+        <link rel="derivative" href="#drive-2011-screenplay" />
+      </work>
+    </writer>
+    <actor>
+      <starring>
+        <character>
+          <name>Driver</name>
+          <entity>Ryan Gosling</entity>
+        </character>
+        <character>
+          <name>Irene</name>
+          <entity>Carey Mulligan</entity>
+        </character>
+        <character>
+          <name>Shannon</name>
+          <entity>Bryan Cranston</entity>
+        </character>
+        <character>
+          <name>Blanche</name>
+          <entity>Christina Hendricks</entity>
+        </character>
+        <character>
+          <name>Nino</name>
+          <entity>Ron Perlman</entity>
+        </character>
+        <character>
+          <name>Standard</name>
+          <entity>Oscar Isaac</entity>
+        </character>
+        <character>
+          <name>Bernie Rose</name>
+          <entity>Albert Brooks</entity>
+        </character>
+      </starring>
+      <!--background-->
+      <character>
+        <name>Tan Suit</name>
+        <entity>Jeff Wolfe</entity>
+      </character>
+      <!--/background-->
+    </actor>
+    <composer>
+      <entity>Cliff Martinez</entity>
+    </composer>
+    <cinematographer>
+      <entity>Newton Thomas Sigel</entity>
+      <!--credit>Camera Operator</credit-->
+    </cinematographer>
+    <editor>
+      <entity>Matthew Newman</entity>
+    </editor>
+    <studio>
+      <entity>Bold Films</entity>
+      <!-- entity = legal entity; an individual, partnership, corporation, or nonprofit -->
+      <entity>Odd Lot Entertainment</entity>
+      <entity>Marc Platt Productions</entity>
+      <entity>Seed Productions</entity>
+    </studio>
+    <distributor>FilmDistrict</distributor>
+    <!-- scope = release [fuzzy/global] | screening [specific/local] -->
+    <showing scope="release" type="theatrical" admission="public" datetime="2011-05-20" locale="en-FR">
+      <function>
+        <!-- function vs. venue = event / specific building where an event is held -->
+        <name xml:lang="fr">Festival de Cannes</name>
+        <nickname>Cannes</nickname>
+        <site>http://www.festival-cannes.com/</site>
+      </function>
+      <medium>film</medium>
+    </showing>
+    <showing scope="screening" type="theatrical" admission="private" datetime="2011-09-16" locale="en-US">
+      <medium>film</medium>
+    </showing>
+    <finance>
+      <!-- currency="USD" -->
+      <budget>15000000</budget>
+      <net />
+      <gross>76175166</gross>
+    </finance>
+    <genre>
+      <tag>neo-noir</tag>
+      <tag>crime</tag>
+      <tag>thriller</tag>
+    </genre>
+    <rating glossary="#mpaa" code="R">
+      <!--
+      @glossary = lazy linking, specify @code or /rating/@code
+      @href = direct linking, specify in URI but must have xml:id explicitly set. @href="#mpaa-r"
+    -->
+      <!-- TV-PG-SLD
+      <rating code="TV-PG">
+        <rating code="S" />
+        <rating code="L" />
+        <rating code="D" />
+      </rating>
+      -->
+      <reason>strong brutal bloody violence, language and some nudity</reason>
+      <!-- predicate only  -->
+    </rating>
+    <score glossary="#nstv" code="F" />
+    <description>A mysterious Hollywood stuntman, mechanic and getaway driver lands himself in trouble when he helps out his neighbor.</description>
+    <!--summary>Film District presents a film directed by Nicolas Winding Refn. Written by Hossein Amini, based on the novel by James Sallis.</summary-->
+    <recognition datetime="2012" type="award" result="lose">
+      <!-- result = win | lose | tie | other -->
+      <!--
+      Year, Result, Award, Category, Recipients
+      -->
+      <from>
+        <entity href="#ampas" />
+      </from>
+      <to>
+        <entity>Lon Bender</entity>
+        <entity>Victor Ray Ennis</entity>
+        <category>Best Achievement in Sound Editing</category>
+      </to>
+    </recognition>
+    <recognition datetime="2011" type="award" result="win">
+      <!-- type = award | selection | review | quote. default = award. -->
+      <from>Austin Film Critics Association</from>
+      <to>
+        <entity>Nicolas Winding Refn</entity>
+        <category>Best Director</category>
+      </to>
+      <to>
+        <entity>Hossein Amini</entity>
+        <category>Best Screenplay, Adapted</category>
+      </to>
+      <to>
+        <entity>Albert Brooks</entity>
+        <category>Best Supporting Actor</category>
+      </to>
+    </recognition>
+    <recognition datetime="2011" type="award" result="2nd">
+      <from>Austin Film Critics Association</from>
+      <to>
+        <entity href="#drive-2011" />
+        <category>Best Film</category>
+      </to>
+    </recognition>
+    <production />
+  </video>
 </ovml>

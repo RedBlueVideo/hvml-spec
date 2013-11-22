@@ -1,279 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ovml xmlns="http://vocab.nospoon.tv/ovml#">
-	<glossary xml:id="mpaa" for="rating" party="3rd">
-		<title>MPAA Ratings</title>
-		<entity>
-			<name>Motion Picture Association of America</name>
-			<nickname>MPAA</nickname>
-			<site title="MPAA.org">http://www.mpaa.org</site>
-		</entity>
-		<scheme>http://www.mpaa.org/ratings/what-each-rating-means</scheme>
-		<rating xml:id="mpaa-g" code="G" maturity="0">
-			<title>General Audiences</title>
-			<subtitle>All Ages Admitted</subtitle>
-			<description>A G-rated motion picture contains nothing in theme, language, nudity, sex, violence or other matters that, in the view of the Rating Board, would offend parents whose younger children view the motion picture. The G rating is not a "certificate of approval," nor does it signify a "children‚Äôs" motion picture. Some snippets of language may go beyond polite conversation but they are common everyday expressions. No stronger words are present in G-rated motion pictures. Depictions of violence are minimal. No nudity, sex scenes or drug use are present in the motion picture.</description>
-		</rating>
-		<rating xml:id="mpaa-pg" code="PG" maturity="0.25">
-			<title>Parental Guidance Suggested</title>
-			<subtitle>Some Material May Not Be Suitable For Children</subtitle>
-			<description>A PG-rated motion picture should be investigated by parents before they let their younger children attend. The PG rating indicates, in the view of the Rating Board, that parents may consider some material unsuitable for their children, and parents should make that decision. The more mature themes in some PG-rated motion pictures may call for parental guidance. There may be some profanity and some depictions of violence or brief nudity. But these elements are not deemed so intense as to require that parents be strongly cautioned beyond the suggestion of parental guidance. There is no drug use content in a PG-rated motion picture.</description>
-		</rating>
-		<rating xml:id="mpaa-pg-13" code="PG-13" maturity="0.5">
-			<title>Parents Strongly Cautioned</title>
-			<subtitle>Some Material May Be Inappropriate For Children Under 13</subtitle>
-			<description>A PG-13 rating is a sterner warning by the Rating Board to parents to determine whether their children under age 13 should view the motion picture, as some material might not be suited for them. A PG-13 motion picture may go beyond the PG rating in theme, violence, nudity, sensuality, language, adult activities or other elements, but does not reach the restricted R category. The theme of the motion picture by itself will not result in a rating greater than PG-13, although depictions of activities related to a mature theme may result in a restricted rating for the motion picture. Any drug use will initially require at least a PG-13 rating. More than brief nudity will require at least a PG-13 rating, but such nudity in a PG-13 rated motion picture generally will not be sexually oriented. There may be depictions of violence in a PG-13 movie, but generally not both realistic and extreme or persistent violence. A motion picture‚Äôs single use of one of the harsher sexually-derived words, though only as an expletive, initially requires at least a PG-13 rating. More than one such expletive requires an R rating, as must even one of those words used in a sexual context. The Rating Board nevertheless may rate such a motion picture PG-13 if, based on a schemeial vote by a two-thirds majority, the Raters feel that most American parents would believe that a PG-13 rating is appropriate because of the context or manner in which the words are used or because the use of those words in the motion picture is inconspicuous.</description>
-		</rating>
-		<rating xml:id="mpaa-r" code="R" maturity="0.75">
-			<title>Restricted</title>
-			<subtitle>Children Under 17 Require Accompanying Parent or Adult Guardian</subtitle>
-			<description>An R-rated motion picture, in the view of the Rating Board, contains some adult material. An R-rated motion picture may include adult themes, adult activity, hard language, intense or persistent violence, sexually-oriented nudity, drug abuse or other elements, so that parents are counseled to take this rating very seriously. Children under 17 are not allowed to attend R-rated motion pictures unaccompanied by a parent or adult guardian. Parents are strongly urged to find out more about R-rated motion pictures in determining their suitability for their children. Generally, it is not appropriate for parents to bring their young children with them to R-rated motion pictures.</description>
-		</rating>
-		<rating xml:id="mpaa-nc-17" code="NC-17" maturity="1">
-			<title>No One 17 and Under Admitted</title>
-			<description>An NC-17 rated motion picture is one that, in the view of the Rating Board, most parents would consider patently too adult for their children 17 and under. No children will be admitted. NC-17 does not mean "obscene" or "pornographic" in the common or legal meaning of those words, and should not be construed as a negative judgment in any sense. The rating simply signals that the content is appropriate only for an adult audience. An NC-17 rating can be based on violence, sex, aberrational behavior, drug abuse or any other element that most parents would consider too strong and therefore off-limits for viewing by their children.</description>
-		</rating>
-	</glossary>
-	<glossary xml:id="fcc" for="rating">
-		<title>TV Parental Guidelines</title>
-		<scheme>http://transition.fcc.gov/vchip/#guidelines</scheme>
-		<rating xml:id="fcc-tv-y" code="TV-Y" maturity="0">
-			<title>All Children</title>
-			<subtitle>This program is designed to be appropriate for all children</subtitle>
-			<description>Whether animated or live-action, the themes and elements in this program are schemeifically designed for a very young audience, including children from ages 2-6. This program is not expected to frighten younger children.</description>
-		</rating>
-		<rating xml:id="fcc-tv-y7" code="TV-Y7" maturity="0.2">
-			<title>Directed to Older Children</title>
-			<subtitle>This program is designed for children age 7 and above.</subtitle>
-			<description>It may be more appropriate for children who have acquired the developmental skills needed to distinguish between make-believe and reality. Themes and elements in this program may include mild fantasy or comedic violence, or may frighten children under the age of 7. Therefore, parents may wish to consider the suitability of this program for their very young children.</description>
-			<rating xml:id="fcc-tv-y7-fv" code="FV">
-				<title>Fantasy Violence</title>
-				<description>For those programs where fantasy violence may be more intense or more combative than other programs in this category, such programs will be designated TV-Y7-FV.</description>
-			</rating>
-		</rating>
-		<rating xml:id="fcc-tv-g" code="TV-G" maturity="0.4">
-			<title>General Audience</title>
-			<subtitle>Most parents would find this program suitable for all ages</subtitle>
-			<description>Although this rating does not signify a program designed schemeifically for children, most parents may let younger children watch this program unattended. It contains little or no violence, no strong language and little or no sexual dialogue or situations.</description>
-		</rating>
-		<rating xml:id="fcc-tv-pg" code="TV-PG" maturity="0.6">
-			<title>Parental Guidance Suggested</title>
-			<subtitle>This program contains material that parents may find unsuitable for younger children</subtitle>
-			<description>Many parents may want to watch it with their younger children. The theme itself may call for parental guidance and/or the program contains one or more of the following: moderate violence (V), some sexual situations (S), infrequent coarse language (L), or some suggestive dialogue (D).</description>
-			<rating xml:id="fcc-tv-pg-v" code="V" type="violence">
-				<title>Moderate violence</title>
-			</rating>
-			<rating xml:id="fcc-tv-pg-s" code="S" type="sex">
-				<title>Some sexual situations</title>
-			</rating>
-			<rating xml:id="fcc-tv-pg-l" code="L" type="profanity">
-				<title>Infrequent coarse language</title>
-			</rating>
-			<rating xml:id="fcc-tv-pg-d" code="D" type="dialogue">
-				<title>Some suggestive dialogue</title>
-			</rating>
-		</rating>
-		<rating xml:id="fcc-tv-14" code="TV-14" maturity="0.8">
-			<title>Parents Strongly Cautioned</title>
-			<subtitle>This program contains some material that many parents would find unsuitable for children under 14 years of age</subtitle>
-			<description>Parents are strongly urged to exercise greater care in monitoring this program and are cautioned against letting children under the age of 14 watch unattended. This program contains one or more of the following: intense violence (V), intense sexual situations (S), strong coarse language (L), or intensely suggestive dialogue (D).</description>
-			<rating xml:id="fcc-tv-14-v" code="V" type="violence">
-				<title>Intense violence</title>
-			</rating>
-			<rating xml:id="fcc-tv-14-s" code="S" type="sex">
-				<title>Intense sexual situations</title>
-			</rating>
-			<rating xml:id="fcc-tv-14-l" code="L" type="profanity">
-				<title>Strong coarse language</title>
-			</rating>
-			<rating xml:id="fcc-tv-14-d" code="D" type="dialogue">
-				<title>Intensely suggestive dialogue</title>
-			</rating>
-		</rating>
-		<rating xml:id="fcc-tv-ma" code="TV-MA" maturity="1">
-			<title>Mature Audience Only</title>
-			<subtitle>This program is specifically designed to be viewed by adults and therefore may be unsuitable for children under 17</subtitle>
-			<description>This program contains one or more of the following: graphic violence (V), explicit sexual activity (S), or crude indecent language (L).</description>
-			<rating xml:id="fcc-tv-ma-v" code="V" type="violence">
-				<title>Graphic violence</title>
-			</rating>
-			<rating xml:id="fcc-tv-ma-s" code="S" type="sex">
-				<title>Explicit sexual activity</title>
-			</rating>
-			<rating xml:id="fcc-tv-ma-l" code="L" type="profanity">
-				<title>Crude indecent language</title>
-			</rating>
-		</rating>
-	</glossary>
-	<glossary xml:id="yt" for="ratings">
-		<title>YouTube Shows &amp; Movies</title>
-		<scheme>http://support.google.com/youtube/bin/answer.py?hl=en&amp;answer=146399</scheme>
-		<group type="profanity">
-			<!-- @symbol -->
-			<rating code="L-" maturity="0" color="green">
-				<title>No strong language</title>
-				<description>Content rated No strong language should be free of any strong, coarse, or other potentially offensive language. Even mild cursing such as "hell" and "damn" or words that are bleeped should be rated as L or L+.</description>
-			</rating>
-			<rating code="L" maturity="0.5" color="yellow">
-				<title>Strong language</title>
-				<description>Content rated L may contain some expletives and profanity; however such words should be infrequent and not used in a sexual context. Content with expletives and profanity that have been bleeped should be rated L as well. An L may also indicate suggestive dialog, sexual innuendo, or other discussion of adult themes. Other L-rated speech may include the expression of strong views and opinions that viewers are likely to find offensive, disreschemetful, or otherwise controversial.</description>
-			</rating>
-			<rating code="L+" maturity="1" color="red">
-				<title>Explicit language</title>
-				<description>Content rated L+ may contain persistent use of expletives and profanity. It may also include coarse and vulgar dialogue that is sexually explicit.</description>
-			</rating>
-		</group>
-		<group type="nudity">
-			<rating code="N-" maturity="0" color="green">
-				<title>No Nudity</title>
-				<description>Content rated No nudity should be free of nudity or partial nudity of any kind.</description>
-			</rating>
-			<rating code="N" maturity="0.5" color="yellow">
-				<title>Minimal covering</title>
-				<description>Content rated N may contain individuals who are minimally clothed (e.g., low cut tops, underwear or revealing bathing suits). Content rated N should not contain any fleeting or prolonged nudity, including exposed buttocks, genitalia, or areola.</description>
-			</rating>
-			<rating code="N+" maturity="1" color="red">
-				<title>Some nudity</title>
-				<description>Content rated N+ may include content featuring exposed buttocks or partially nude breasts. Content rated N+ may also contain full nudity where the context is appropriately educational, documentary or artistic.</description>
-			</rating>
-		</group>
-		<group type="sex">
-			<rating code="S-" maturity="0" color="green">
-				<title>No sexual situations</title>
-				<description>Content rated No sexual situations should be free of any sexual conduct or themes. Brief displays of affection, such as a kiss or hug are excepted.</description>
-			</rating>
-			<rating code="S" maturity="0.5" color="yellow">
-				<title>Mild sexual situations</title>
-				<description>Content rated S may contain mild sexual activity or themes. This includes implied sex acts, light or comedic fetish references or behavior, or the presence of mild sexual situations or discussion.</description>
-			</rating>
-			<rating code="S+" maturity="1" color="red">
-				<title>Explicit sexual situations</title>
-				<description>Content rated S+ may contain explicit sexual content. This may include dramatized sex acts, explicit sexual situations or discussion.</description>
-			</rating>
-		</group>
-		<group type="violence">
-			<rating code="V-" maturity="0" color="green">
-				<title>No violence or disturbing content</title>
-				<description>Content rated No violence or disturbing content should be free of violence, injury, or other imagery that may be considered gory, disturbing, or repulsive to sensitive viewers.</description>
-			</rating>
-			<rating code="V" maturity="0.5" color="yellow">
-				<title>Mildly violent or disturbing</title>
-				<description>Content rated V may contain mild, comedic violence, fantasy violence, or isolated incidents of realistic violence. However, any violence depicted should not be gory, pervasive, or sexual in nature. Similarly, V-rated content may contain a small amount of other imagery or situations that are disturbing or repulsive to sensitive viewers (such as real or dramatized medical footage, or depictions of disgusting or scary content in a horror or fantasy context).</description>
-			</rating>
-			<rating code="V+" maturity="1" color="red">
-				<title>Strongly violent or disturbing</title>
-				<description>Content rated V+ may contain violence that is persistent, intense, and graphic. It may also include pervasive imagery or situations that are disturbing or repulsive to the average viewer. This may include animated content, if it features realistic depictions of extreme violence or other extremely disturbing or repulsive imagery.</description>
-			</rating>
-		</group>
-		<group type="drugs">
-			<rating code="D-" title="No drug abuse" maturity="0" color="green">Content rated No drug abuse should be free of any drug abuse. However, fleeting and moderate consumption of alcohol or tobacco by adults as well as responsible use of medications may appear.</rating>
-			<rating code="D" title="Mild drug use" maturity="0.5" color="yellow">Content rated D may contain mild drug use, including excessive or persistent consumption of alcohol or tobacco. It also may include incidental or comedic use of drugs such as marijuana, sativa, hallucinogens or prescription pharmaceuticals. Implied, non-graphic use of other drugs, such as heroin, may be rated D as well.</rating>
-			<rating code="D+" title="Drug use" maturity="1" color="red">Content rated D+ may contain graphic, fictional depictions of drug abuse and display of drug paraphernalia. Content rated D+ may also contain actual depictions of drug abuse where the context is appropriately educational, documentary or scientific.</rating>
-		</group>
-		<rating code="F" type="health">
-			<title>Flashing or strobing light</title>
-			<description>Content rated F indicates the presence of flashing light or other strobing content which can affect those with photosensitive epilepsy.</description>
-		</rating>
-		<rating code="NR" type="none">
-			<title>No Rating</title>
-			<description>Content set as “NO RATING” has not been rated by the uploader. In cases where the uploader has failed to provide a rating for their video, it is automatically Age-gated and not available to viewers younger than 18.</description>
-		</rating>
-	</glossary>
-	<glossary xml:id="nstv" for="score" party="1st">
-		<title>No Spoon TV Verdicts</title>
-		<entity email="hello@nospoon.tv" site="http://nospoon.tv">
-			<name>No Spoon LLC</name>
-			<nickname>No Spoon</nickname>
-		</entity>
-		<!--
-		Phenomenal / Exceptional
-		Amazing / Fantastic
-		Good
-		Pretty Good
-		Mediocre
-		Tolerable
-		Bad
-		Horrible
-		Unwatchable
-		-
-		Watch Ironically
-		Watch High
-		Watch IMAX
-		See it multiple times
-		-->
-		<group type="scale">
-			<score xml:id="nstv-ma" code="Ma" rank="1">
-				<title>Masterpiece</title>
-				<!-- Phenomenal -->
-			</score>
-			<score xml:id="nstv-s" code="S" rank="0.875">
-				<title>Sublime</title>
-				<!-- Amazing -->
-			</score>
-			<score xml:id="nstv-ti" code="Ti" rank="0.75">
-				<title>Tight</title>
-				<!-- Good -->
-			</score>
-			<score xml:id="nstv-nh" code="NH" rank="0.625">
-				<title>Not Heinous</title>
-				<!-- Pretty Good -->
-			</score>
-			<score xml:id="nstv-m" code="M" rank="0.5">
-				<title>Mediocre</title>
-			</score>
-			<score xml:id="nstv-a" code="A" rank="0.375">
-				<title>A’ight</title>
-				<!-- Tolerable -->
-			</score>
-			<score xml:id="nstv-tr" code="Tra" rank="0.25">
-				<title>Trash</title>
-				<!-- Bad -->
-			</score>
-			<score xml:id="nstv-tri" code="Tri" rank="0.125">
-				<title>Tripe</title>
-				<!-- Horrible -->
-			</score>
-			<score xml:id="nstv-u" code="U" rank="0">
-				<title>Unwatchable</title>
-				<description>Have to stop partway through.</description>
-			</score>
-		</group>
-		<group>
-			<!--score xml:id="nstv-fc" code="FC">
-				<title>Future Classic</title>
-			</score-->
-			<score xml:id="nstv-smt" code="SMT">
-				<title>See Multiple Times</title>
-			</score>
-			<score xml:id="nstv-wi" code="WI">
-				<title>Watch Ironically</title>
-			</score>
-			<score xml:id="nstv-wh" code="WH">
-				<title>Watch High</title>
-			</score>
-			<score xml:id="nstv-ic" code="IC">
-				<title>Instant Classic</title>
-			</score>
-		</group>
-	</glossary>
-	<glossary for="venue">
-		<venue xml:id="ica" type="theater">
-			<entity site="http://www.icaboston.org/">The Institute of Contemporary Art</entity>
-		</venue>
-	</glossary>
-	<glossary for="medium">
-		<medium xml:id="dvd" code="DVD">
-			<title>Digital Versatile Disc</title>
-			<format>
-				<tag>physical</tag>
-				<tag>disc</tag>
-			</format>
-			<description />
-		</medium>
-	</glossary>
-	<glossary for="sync" xml:id="services">
-		<service xml:id="twitter">
-			<title>Twitter</title>
-			<limit>140</limit>
-		</service>
-	</glossary>
+  <glossary xml:id="mpaa" for="rating" party="3rd">
+    <title>MPAA Ratings</title>
+    <entity>
+      <name>Motion Picture Association of America</name>
+      <nickname>MPAA</nickname>
+      <site title="MPAA.org">http://www.mpaa.org</site>
+    </entity>
+    <scheme>http://www.mpaa.org/ratings/what-each-rating-means</scheme>
+    <rating xml:id="mpaa-g" code="G" maturity="0">
+      <title>General Audiences</title>
+      <subtitle>All Ages Admitted</subtitle>
+      <description>A G-rated motion picture contains nothing in theme, language, nudity, sex, violence or other matters that, in the view of the Rating Board, would offend parents whose younger children view the motion picture. The G rating is not a "certificate of approval," nor does it signify a "children‚Äôs" motion picture. Some snippets of language may go beyond polite conversation but they are common everyday expressions. No stronger words are present in G-rated motion pictures. Depictions of violence are minimal. No nudity, sex scenes or drug use are present in the motion picture.</description>
+    </rating>
+    <rating xml:id="mpaa-pg" code="PG" maturity="0.25">
+      <title>Parental Guidance Suggested</title>
+      <subtitle>Some Material May Not Be Suitable For Children</subtitle>
+      <description>A PG-rated motion picture should be investigated by parents before they let their younger children attend. The PG rating indicates, in the view of the Rating Board, that parents may consider some material unsuitable for their children, and parents should make that decision. The more mature themes in some PG-rated motion pictures may call for parental guidance. There may be some profanity and some depictions of violence or brief nudity. But these elements are not deemed so intense as to require that parents be strongly cautioned beyond the suggestion of parental guidance. There is no drug use content in a PG-rated motion picture.</description>
+    </rating>
+    <rating xml:id="mpaa-pg-13" code="PG-13" maturity="0.5">
+      <title>Parents Strongly Cautioned</title>
+      <subtitle>Some Material May Be Inappropriate For Children Under 13</subtitle>
+      <description>A PG-13 rating is a sterner warning by the Rating Board to parents to determine whether their children under age 13 should view the motion picture, as some material might not be suited for them. A PG-13 motion picture may go beyond the PG rating in theme, violence, nudity, sensuality, language, adult activities or other elements, but does not reach the restricted R category. The theme of the motion picture by itself will not result in a rating greater than PG-13, although depictions of activities related to a mature theme may result in a restricted rating for the motion picture. Any drug use will initially require at least a PG-13 rating. More than brief nudity will require at least a PG-13 rating, but such nudity in a PG-13 rated motion picture generally will not be sexually oriented. There may be depictions of violence in a PG-13 movie, but generally not both realistic and extreme or persistent violence. A motion picture‚Äôs single use of one of the harsher sexually-derived words, though only as an expletive, initially requires at least a PG-13 rating. More than one such expletive requires an R rating, as must even one of those words used in a sexual context. The Rating Board nevertheless may rate such a motion picture PG-13 if, based on a schemeial vote by a two-thirds majority, the Raters feel that most American parents would believe that a PG-13 rating is appropriate because of the context or manner in which the words are used or because the use of those words in the motion picture is inconspicuous.</description>
+    </rating>
+    <rating xml:id="mpaa-r" code="R" maturity="0.75">
+      <title>Restricted</title>
+      <subtitle>Children Under 17 Require Accompanying Parent or Adult Guardian</subtitle>
+      <description>An R-rated motion picture, in the view of the Rating Board, contains some adult material. An R-rated motion picture may include adult themes, adult activity, hard language, intense or persistent violence, sexually-oriented nudity, drug abuse or other elements, so that parents are counseled to take this rating very seriously. Children under 17 are not allowed to attend R-rated motion pictures unaccompanied by a parent or adult guardian. Parents are strongly urged to find out more about R-rated motion pictures in determining their suitability for their children. Generally, it is not appropriate for parents to bring their young children with them to R-rated motion pictures.</description>
+    </rating>
+    <rating xml:id="mpaa-nc-17" code="NC-17" maturity="1">
+      <title>No One 17 and Under Admitted</title>
+      <description>An NC-17 rated motion picture is one that, in the view of the Rating Board, most parents would consider patently too adult for their children 17 and under. No children will be admitted. NC-17 does not mean "obscene" or "pornographic" in the common or legal meaning of those words, and should not be construed as a negative judgment in any sense. The rating simply signals that the content is appropriate only for an adult audience. An NC-17 rating can be based on violence, sex, aberrational behavior, drug abuse or any other element that most parents would consider too strong and therefore off-limits for viewing by their children.</description>
+    </rating>
+  </glossary>
+  <glossary xml:id="fcc" for="rating">
+    <title>TV Parental Guidelines</title>
+    <scheme>http://transition.fcc.gov/vchip/#guidelines</scheme>
+    <rating xml:id="fcc-tv-y" code="TV-Y" maturity="0">
+      <title>All Children</title>
+      <subtitle>This program is designed to be appropriate for all children</subtitle>
+      <description>Whether animated or live-action, the themes and elements in this program are schemeifically designed for a very young audience, including children from ages 2-6. This program is not expected to frighten younger children.</description>
+    </rating>
+    <rating xml:id="fcc-tv-y7" code="TV-Y7" maturity="0.2">
+      <title>Directed to Older Children</title>
+      <subtitle>This program is designed for children age 7 and above.</subtitle>
+      <description>It may be more appropriate for children who have acquired the developmental skills needed to distinguish between make-believe and reality. Themes and elements in this program may include mild fantasy or comedic violence, or may frighten children under the age of 7. Therefore, parents may wish to consider the suitability of this program for their very young children.</description>
+      <rating xml:id="fcc-tv-y7-fv" code="FV">
+        <title>Fantasy Violence</title>
+        <description>For those programs where fantasy violence may be more intense or more combative than other programs in this category, such programs will be designated TV-Y7-FV.</description>
+      </rating>
+    </rating>
+    <rating xml:id="fcc-tv-g" code="TV-G" maturity="0.4">
+      <title>General Audience</title>
+      <subtitle>Most parents would find this program suitable for all ages</subtitle>
+      <description>Although this rating does not signify a program designed schemeifically for children, most parents may let younger children watch this program unattended. It contains little or no violence, no strong language and little or no sexual dialogue or situations.</description>
+    </rating>
+    <rating xml:id="fcc-tv-pg" code="TV-PG" maturity="0.6">
+      <title>Parental Guidance Suggested</title>
+      <subtitle>This program contains material that parents may find unsuitable for younger children</subtitle>
+      <description>Many parents may want to watch it with their younger children. The theme itself may call for parental guidance and/or the program contains one or more of the following: moderate violence (V), some sexual situations (S), infrequent coarse language (L), or some suggestive dialogue (D).</description>
+      <rating xml:id="fcc-tv-pg-v" code="V" type="violence">
+        <title>Moderate violence</title>
+      </rating>
+      <rating xml:id="fcc-tv-pg-s" code="S" type="sex">
+        <title>Some sexual situations</title>
+      </rating>
+      <rating xml:id="fcc-tv-pg-l" code="L" type="profanity">
+        <title>Infrequent coarse language</title>
+      </rating>
+      <rating xml:id="fcc-tv-pg-d" code="D" type="dialogue">
+        <title>Some suggestive dialogue</title>
+      </rating>
+    </rating>
+    <rating xml:id="fcc-tv-14" code="TV-14" maturity="0.8">
+      <title>Parents Strongly Cautioned</title>
+      <subtitle>This program contains some material that many parents would find unsuitable for children under 14 years of age</subtitle>
+      <description>Parents are strongly urged to exercise greater care in monitoring this program and are cautioned against letting children under the age of 14 watch unattended. This program contains one or more of the following: intense violence (V), intense sexual situations (S), strong coarse language (L), or intensely suggestive dialogue (D).</description>
+      <rating xml:id="fcc-tv-14-v" code="V" type="violence">
+        <title>Intense violence</title>
+      </rating>
+      <rating xml:id="fcc-tv-14-s" code="S" type="sex">
+        <title>Intense sexual situations</title>
+      </rating>
+      <rating xml:id="fcc-tv-14-l" code="L" type="profanity">
+        <title>Strong coarse language</title>
+      </rating>
+      <rating xml:id="fcc-tv-14-d" code="D" type="dialogue">
+        <title>Intensely suggestive dialogue</title>
+      </rating>
+    </rating>
+    <rating xml:id="fcc-tv-ma" code="TV-MA" maturity="1">
+      <title>Mature Audience Only</title>
+      <subtitle>This program is specifically designed to be viewed by adults and therefore may be unsuitable for children under 17</subtitle>
+      <description>This program contains one or more of the following: graphic violence (V), explicit sexual activity (S), or crude indecent language (L).</description>
+      <rating xml:id="fcc-tv-ma-v" code="V" type="violence">
+        <title>Graphic violence</title>
+      </rating>
+      <rating xml:id="fcc-tv-ma-s" code="S" type="sex">
+        <title>Explicit sexual activity</title>
+      </rating>
+      <rating xml:id="fcc-tv-ma-l" code="L" type="profanity">
+        <title>Crude indecent language</title>
+      </rating>
+    </rating>
+  </glossary>
+  <glossary xml:id="yt" for="ratings">
+    <title>YouTube Shows &amp; Movies</title>
+    <scheme>http://support.google.com/youtube/bin/answer.py?hl=en&amp;answer=146399</scheme>
+    <group type="profanity">
+      <!-- @symbol -->
+      <rating code="L-" maturity="0" color="green">
+        <title>No strong language</title>
+        <description>Content rated No strong language should be free of any strong, coarse, or other potentially offensive language. Even mild cursing such as "hell" and "damn" or words that are bleeped should be rated as L or L+.</description>
+      </rating>
+      <rating code="L" maturity="0.5" color="yellow">
+        <title>Strong language</title>
+        <description>Content rated L may contain some expletives and profanity; however such words should be infrequent and not used in a sexual context. Content with expletives and profanity that have been bleeped should be rated L as well. An L may also indicate suggestive dialog, sexual innuendo, or other discussion of adult themes. Other L-rated speech may include the expression of strong views and opinions that viewers are likely to find offensive, disreschemetful, or otherwise controversial.</description>
+      </rating>
+      <rating code="L+" maturity="1" color="red">
+        <title>Explicit language</title>
+        <description>Content rated L+ may contain persistent use of expletives and profanity. It may also include coarse and vulgar dialogue that is sexually explicit.</description>
+      </rating>
+    </group>
+    <group type="nudity">
+      <rating code="N-" maturity="0" color="green">
+        <title>No Nudity</title>
+        <description>Content rated No nudity should be free of nudity or partial nudity of any kind.</description>
+      </rating>
+      <rating code="N" maturity="0.5" color="yellow">
+        <title>Minimal covering</title>
+        <description>Content rated N may contain individuals who are minimally clothed (e.g., low cut tops, underwear or revealing bathing suits). Content rated N should not contain any fleeting or prolonged nudity, including exposed buttocks, genitalia, or areola.</description>
+      </rating>
+      <rating code="N+" maturity="1" color="red">
+        <title>Some nudity</title>
+        <description>Content rated N+ may include content featuring exposed buttocks or partially nude breasts. Content rated N+ may also contain full nudity where the context is appropriately educational, documentary or artistic.</description>
+      </rating>
+    </group>
+    <group type="sex">
+      <rating code="S-" maturity="0" color="green">
+        <title>No sexual situations</title>
+        <description>Content rated No sexual situations should be free of any sexual conduct or themes. Brief displays of affection, such as a kiss or hug are excepted.</description>
+      </rating>
+      <rating code="S" maturity="0.5" color="yellow">
+        <title>Mild sexual situations</title>
+        <description>Content rated S may contain mild sexual activity or themes. This includes implied sex acts, light or comedic fetish references or behavior, or the presence of mild sexual situations or discussion.</description>
+      </rating>
+      <rating code="S+" maturity="1" color="red">
+        <title>Explicit sexual situations</title>
+        <description>Content rated S+ may contain explicit sexual content. This may include dramatized sex acts, explicit sexual situations or discussion.</description>
+      </rating>
+    </group>
+    <group type="violence">
+      <rating code="V-" maturity="0" color="green">
+        <title>No violence or disturbing content</title>
+        <description>Content rated No violence or disturbing content should be free of violence, injury, or other imagery that may be considered gory, disturbing, or repulsive to sensitive viewers.</description>
+      </rating>
+      <rating code="V" maturity="0.5" color="yellow">
+        <title>Mildly violent or disturbing</title>
+        <description>Content rated V may contain mild, comedic violence, fantasy violence, or isolated incidents of realistic violence. However, any violence depicted should not be gory, pervasive, or sexual in nature. Similarly, V-rated content may contain a small amount of other imagery or situations that are disturbing or repulsive to sensitive viewers (such as real or dramatized medical footage, or depictions of disgusting or scary content in a horror or fantasy context).</description>
+      </rating>
+      <rating code="V+" maturity="1" color="red">
+        <title>Strongly violent or disturbing</title>
+        <description>Content rated V+ may contain violence that is persistent, intense, and graphic. It may also include pervasive imagery or situations that are disturbing or repulsive to the average viewer. This may include animated content, if it features realistic depictions of extreme violence or other extremely disturbing or repulsive imagery.</description>
+      </rating>
+    </group>
+    <group type="drugs">
+      <rating code="D-" title="No drug abuse" maturity="0" color="green">Content rated No drug abuse should be free of any drug abuse. However, fleeting and moderate consumption of alcohol or tobacco by adults as well as responsible use of medications may appear.</rating>
+      <rating code="D" title="Mild drug use" maturity="0.5" color="yellow">Content rated D may contain mild drug use, including excessive or persistent consumption of alcohol or tobacco. It also may include incidental or comedic use of drugs such as marijuana, sativa, hallucinogens or prescription pharmaceuticals. Implied, non-graphic use of other drugs, such as heroin, may be rated D as well.</rating>
+      <rating code="D+" title="Drug use" maturity="1" color="red">Content rated D+ may contain graphic, fictional depictions of drug abuse and display of drug paraphernalia. Content rated D+ may also contain actual depictions of drug abuse where the context is appropriately educational, documentary or scientific.</rating>
+    </group>
+    <rating code="F" type="health">
+      <title>Flashing or strobing light</title>
+      <description>Content rated F indicates the presence of flashing light or other strobing content which can affect those with photosensitive epilepsy.</description>
+    </rating>
+    <rating code="NR" type="none">
+      <title>No Rating</title>
+      <description>Content set as “NO RATING” has not been rated by the uploader. In cases where the uploader has failed to provide a rating for their video, it is automatically Age-gated and not available to viewers younger than 18.</description>
+    </rating>
+  </glossary>
+  <glossary xml:id="nstv" for="score" party="1st">
+    <title>No Spoon TV Verdicts</title>
+    <entity email="hello@nospoon.tv" site="http://nospoon.tv">
+      <name>No Spoon LLC</name>
+      <nickname>No Spoon</nickname>
+    </entity>
+    <!--
+    Phenomenal / Exceptional
+    Amazing / Fantastic
+    Good
+    Pretty Good
+    Mediocre
+    Tolerable
+    Bad
+    Horrible
+    Unwatchable
+    -
+    Watch Ironically
+    Watch High
+    Watch IMAX
+    See it multiple times
+    -->
+    <group type="scale">
+      <score xml:id="nstv-ma" code="Ma" rank="1">
+        <title>Masterpiece</title>
+        <!-- Phenomenal -->
+      </score>
+      <score xml:id="nstv-s" code="S" rank="0.875">
+        <title>Sublime</title>
+        <!-- Amazing -->
+      </score>
+      <score xml:id="nstv-ti" code="Ti" rank="0.75">
+        <title>Tight</title>
+        <!-- Good -->
+      </score>
+      <score xml:id="nstv-nh" code="NH" rank="0.625">
+        <title>Not Heinous</title>
+        <!-- Pretty Good -->
+      </score>
+      <score xml:id="nstv-m" code="M" rank="0.5">
+        <title>Mediocre</title>
+      </score>
+      <score xml:id="nstv-a" code="A" rank="0.375">
+        <title>A’ight</title>
+        <!-- Tolerable -->
+      </score>
+      <score xml:id="nstv-tr" code="Tra" rank="0.25">
+        <title>Trash</title>
+        <!-- Bad -->
+      </score>
+      <score xml:id="nstv-tri" code="Tri" rank="0.125">
+        <title>Tripe</title>
+        <!-- Horrible -->
+      </score>
+      <score xml:id="nstv-u" code="U" rank="0">
+        <title>Unwatchable</title>
+        <description>Have to stop partway through.</description>
+      </score>
+    </group>
+    <group>
+      <!--score xml:id="nstv-fc" code="FC">
+        <title>Future Classic</title>
+      </score-->
+      <score xml:id="nstv-smt" code="SMT">
+        <title>See Multiple Times</title>
+      </score>
+      <score xml:id="nstv-wi" code="WI">
+        <title>Watch Ironically</title>
+      </score>
+      <score xml:id="nstv-wh" code="WH">
+        <title>Watch High</title>
+      </score>
+      <score xml:id="nstv-ic" code="IC">
+        <title>Instant Classic</title>
+      </score>
+    </group>
+  </glossary>
+  <glossary for="venue">
+    <venue xml:id="ica" type="theater">
+      <entity site="http://www.icaboston.org/">The Institute of Contemporary Art</entity>
+    </venue>
+  </glossary>
+  <glossary for="medium">
+    <medium xml:id="dvd" code="DVD">
+      <title>Digital Versatile Disc</title>
+      <format>
+        <tag>physical</tag>
+        <tag>disc</tag>
+      </format>
+      <description />
+    </medium>
+  </glossary>
+  <glossary for="sync" xml:id="services">
+    <service xml:id="twitter">
+      <title>Twitter</title>
+      <limit>140</limit>
+    </service>
+  </glossary>
 </ovml>
