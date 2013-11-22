@@ -14,7 +14,7 @@ Possible uses:
 - Educators and students wishing to teach or understand the minute details of films and video.
 - Programmers wishing to ingest, convert, display, or splice video files who must reference technical details like frame rate or pixel aspect ratio without relying on the often erroneous or incomplete information reported by the container.
 
-Inspired by the popular article “[How The Television Will Be Revolutionized: The Exciting Future of the iPad, Internet TV, and Web 3.0](http://www.accelerating.org/articles/televisionwillberevolutionized.html)”, which talks about an “OVML”, its goals do not yet overlap 100% with the ones the author intended for its namesake.
+Inspired by the article <cite>[How The Television Will Be Revolutionized: The Exciting Future of the iPad, Internet TV, and Web 3.0](http://www.accelerating.org/articles/televisionwillberevolutionized.html)</cite>, which talks about an “OVML”, its goals do not yet overlap 100% with the ones the author intended.
 
 ## Cheat Sheet
 
