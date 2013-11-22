@@ -9,7 +9,7 @@ It is a similar technology to [MPEG-7](http://en.wikipedia.org/wiki/MPEG-7), but
 
 Possible uses:
 
-- Video players displaying metadata to an end user, as with [ID3](http://id3.org/) tags.
+- Video players displaying metadata to an end user, as with MP3 [ID3](http://id3.org/) tags.
 - Search engines displaying metadata to an end user, as with [schema.org](http://schema.org/VideoObject) (but with a more specialized vocabulary).
 - Historians wishing to catalog the world’s films.
 - Archivists wishing to catalog internal libraries (such as the [HFA](http://hcl.harvard.edu/hfa/)).
