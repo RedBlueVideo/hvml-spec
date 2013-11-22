@@ -19,6 +19,6 @@ Possible uses:
 ## Cheat Sheet
 
 - Content-Type: `application/ovml+xml`
-- Extension: `.ovml`
+- Extensions: `.ovml`, `.xml`
 - Namespace: `http://vocab.nospoon.tv/ovml#`
 - Standard namespace prefix: `ovml`
