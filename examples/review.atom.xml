@@ -1,106 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <entry xmlns="http://www.w3.org/2005/Atom"><id>urn:uuid:0fba17cd-a212-40ac-bb12-c765b927c3c9</id>
-    <updated>2011-12-29T15:44:11-05:00</updated>
-    <published>2011-12-29T15:44:11-05:00</published>
-    <link href="?id=urn:uuid:0fba17cd-a212-40ac-bb12-c765b927c3c9" rel="edit" type="application/atom+xml"/>
-    <link href="http://site.nospoon.tv/reviews.xq?title=drive&amp;published=2011" rel="self" type="application/xhtml+xml"/>
-    <title>Drive (2011)</title>
-    <category scheme="http://vocab.nospoon.tv/category/" term="reviews" label="Reviews"/>
-    <category scheme="http://vocab.nospoon.tv/ovml#title" term="drive" label="Drive"/>
-    <category scheme="http://vocab.nospoon.tv/ovml#published" term="2011-05-20" label="2011"/>
-    <ns:article xmlns="http://vocab.nospoon.tv/article#" xmlns:ns="http://vocab.nospoon.tv/article#"><is-published>false</is-published>
-		<sync glossary="#services" service="twitter">
-			<entry><sent>2012-01-01T17:00:00-05:00</sent>
-				<account>NoSpoonProduct</account>
-				<content>New Review: “Drive” (2011) http://ns.pn/r/1</content>
-				<url>http://twitter.com/NoSpoonProduct/010101</url>
-			</entry>
-		</sync>
-		<sync glossary="#services" service="fb">
-			<entry>
-			</entry>
-		</sync>
-    </ns:article>
-    <ovml:ovml xmlns="http://vocab.nospoon.tv/ovml#" xmlns:ovml="http://vocab.nospoon.tv/ovml#"><meta><link rel="glossary" href="/db/video/glossary.ovml"/>
-			<link title="IMDb" rel="info" href="http://www.imdb.com/title/tt0780504/"/>
-	        <link title="TMDb" rel="info" href="http://www.themoviedb.org/movie/64690-drive"/>
-	        <link title="Wikipedia" rel="info" href="http://en.wikipedia.org/wiki/Drive_(2011_film)"/>
-	        <link title="Amazon" rel="shop affiliate" href="http://www.amazon.com/Drive-UltraViolet-Digital-Copy-Blu-ray/dp/B0064NTZJO%3FSubscriptionId%3DAKIAIH55RAJODGWTXQLQ%26tag%3Dnospotv-20%26linkCode%3Dsp1%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0064NTZJO"/>
-		</meta>
-        <video xml:id="bullitt">
-            <title>Bullitt</title>
-            <published>1968-10-17</published>
-        </video>
-        <video xml:id="le-samourai">
-            <title xml:lang="fr">Le Samouraï</title>
-            <published>1967-10-25</published>
-        </video>
-        <video xml:id="drive">
-            <title>Drive</title>
-            <published>2011-05-20</published>
-            <director>Nicolas Winding Refn</director>
-            <distributor>FilmDistrict</distributor>
-            <writer><work xml:id="drive-2011-screenplay">
-					<entity>Hossein Amini</entity>
-					<link rel="derived-from" href="#drive-2005-book"/>
-				</work>
-				<work xml:id="drive-2005-book" type="novel">
-					<title>Drive</title>
-					<published>2005</published>
-					<entity>James Sallis</entity>			
-					<item-title>original story</item-title>
-					<link rel="derivative" href="#drive-2011-screenplay"/>
-				</work>
-			</writer>
-            <runtime>98</runtime>
-            <rating glossary="#mpaa" code="R">
-            	<reason>strong brutal bloody violence, language and some nudity</reason>
-            </rating>
-            <actor><starring><character><name>Driver</name>
-						<entity>Ryan Gosling</entity>
-					</character>
-					<character><name>Irene</name>
-						<entity>Carey Mulligan</entity>
-					</character>
-					<character><name>Shannon</name>
-						<entity>Bryan Cranston</entity>
-					</character>
-					<character><name>Blanche</name>
-						<entity>Christina Hendricks</entity>
-					</character>
-					<character><name>Nino</name>
-						<entity>Ron Perlman</entity>
-					</character>
-					<character><name>Standard</name>
-						<entity>Oscar Isaac</entity>
-					</character>
-					<character><name>Bernie Rose</name>
-						<entity>Albert Brooks</entity>
-					</character>
-				</starring>
-			</actor>
-        </video>
-        <video xml:id="bronson">
-            <ovml:title>Bronson</ovml:title>
-            <ovml:published>2008-10</ovml:published>
-        </video>
-    </ovml:ovml>
-    <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml" vocab="http://vocab.nospoon.tv/ovml#" prefix="ovml: http://vocab.nospoon.tv/ovml#" class="entry-content">
-            <p>The Driver drives for hire. He has no other name, and no other life. When we first see him, he’s the wheelman for a getaway car, who runs from police pursuit not only by using sheer speed and muscle, but by coolly exploiting the street terrain and outsmarting his pursuers. By day, he is a stunt driver for action movies. The two jobs represent no conflict for him: He drives.</p>
-            <p>As played by Ryan Gosling, he is in the tradition of two iconic heroes of the 1960s: Clint Eastwood’s Man With No Name and Alain Delon in <cite typeof="Video" about="#le-samourai" property="title">Le Samouraï</cite>. He has no family, no history and seemingly few emotions. Whatever happened to him drove any personality deep beneath the surface. He is an existential hero, I suppose, defined entirely by his behavior.</p>
-            <p>That would qualify him as the hero of a mindless action picture, all CGI and crashes and mayhem. <cite typeof="Video" about="#drive" property="title">Drive</cite> is more of an elegant exercise in style, and its emotions may be hidden but they run deep. Sometimes a movie will make a greater impact by not trying too hard. The enigma of the driver is surrounded by a rich gallery of supporting actors who are clear about their hopes and fears, and who have either reached an accommodation with the Driver, or not. Here is still another illustration of the old Hollywood noir principle that a movie lives its life not through its hero, but within its shadows.</p>
-            <p>The Driver lives somewhere (somehow that’s improbable, since we expect him to descend full-blown into the story). His neighbor is Irene, played by Carey Mulligan, that template of vulnerability. She has a young son, Benecio (Kaden Leos), who seems to stir the Driver’s affection, although he isn’t the effusive type. They grow warm, but in a week, her husband, Standard (Oscar Isaac), is published from prison. Against our expectations, Standard isn’t jealous or hostile about the new neighbor, but sizes him up, sees a professional and quickly pitches a $1 million heist idea. That will provide the engine for the rest of the story, and as Irene and Benecio are endangered, the Driver reveals deep feelings and loyalties indeed, and undergoes enormous risk at little necessary benefit to himself.</p>
-            <aside class="pullquote">
-                <blockquote><p>The entire film, in fact, seems much more real than the usual action-crime-chase concoctions we’ve grown tired of.</p>
-                </blockquote>
-            </aside>
-            <p>The film by the Danish director Nicolas Winding Refn (<cite typeof="Video" about="#bronson" property="title">Bronson</cite>), based on a novel by James Sallis, peoples its story with characters who bring lifetimes onto the screen, in contrast to the Driver, who brings as little as possible. Ron Perlman seems to be a big-time operator working out of a small-time front, a pizzeria in a  strip mall. Albert Brooks, not the slightest bit funny, plays a producer of the kinds of B movies the Driver does stunt driving for—and also has a sideline in crime. These people are ruthless.</p>
-            <p>More benign is Bryan Cranston, as the kind of man you know the Driver must have behind him, a genius at auto repairs, restoration and supercharging.</p>
-            <p>I mentioned CGI earlier. <cite typeof="Video" about="#drive" property="title">Drive</cite> seems to have little of it. Most of the stunt driving looks real to me, with cars of weight and heft, rather than animated impossible fantasies. The entire film, in fact, seems much more real than the usual action-crime-chase concoctions we’ve grown tired of. Here is a movie with respect for writing, acting and craft. It has respect for knowledgable moviegoers. There were moments when I was reminded of <cite typeof="Video" about="#bullitt" property="title">Bullitt</cite>, which was so much better than the films it inspired. The key thing you want to feel, during a chase scene, is involvement in the purpose of the chase. You have to care. Too often we’re simply witnessing technology.</p>
-            <p>Maybe there was another reason I thought of <cite about="#bullitt">Bullitt</cite>. Ryan Gosling is a charismatic actor, as Steve McQueen was. He embodies presence and sincerity. Ever since his chilling young Jewish neo-Nazi in <span typeof="Video" about="#believer">
-                    <cite property="title">The Believer</cite> (<time property="published" datetime="2001-01-19">2001</time>)</span>, he has shown a gift for finding arresting, powerful characters. An actor who can fall in love with a love doll and make us believe it, as he did in <span typeof="Video" about="#lars-real-girl">
-                    <cite property="title">Lars and the Real Girl</cite> (<time property="published" datetime="2007-09-16">2007</time>)</span>, can achieve just about anything. <cite about="#drive">Drive</cite> looks like one kind of movie in the ads, and it is that kind of movie. It is also a rebuke to most of the movies it looks like.</p>
-        </div>
-    </content>
+<updated>2011-12-29T15:44:11-05:00</updated>
+<published>2011-12-29T15:44:11-05:00</published>
+<link href="?id=urn:uuid:0fba17cd-a212-40ac-bb12-c765b927c3c9" rel="edit" type="application/atom+xml"/>
+<link href="http://site.nospoon.tv/reviews.xq?title=drive&amp;published=2011" rel="self" type="application/xhtml+xml"/>
+<title>Drive (2011)</title>
+<category scheme="http://vocab.nospoon.tv/category/" term="reviews" label="Reviews"/>
+<category scheme="http://vocab.nospoon.tv/ovml#title" term="drive" label="Drive"/>
+<category scheme="http://vocab.nospoon.tv/ovml#published" term="2011-05-20" label="2011"/>
+<ns:article xmlns="http://vocab.nospoon.tv/article#" xmlns:ns="http://vocab.nospoon.tv/article#"><is-published>false</is-published>
+<sync glossary="#services" service="twitter">
+ <entry><sent>2012-01-01T17:00:00-05:00</sent>
+ <account>NoSpoonProduct</account>
+ <content>New Review: “Drive” (2011) http://ns.pn/r/1</content>
+ <url>http://twitter.com/NoSpoonProduct/010101</url>
+</entry>
+</sync>
+<sync glossary="#services" service="fb">
+ <entry>
+ </entry>
+</sync>
+</ns:article>
+<ovml:ovml xmlns="http://vocab.nospoon.tv/ovml#" xmlns:ovml="http://vocab.nospoon.tv/ovml#"><meta><link rel="glossary" href="/db/video/glossary.ovml"/>
+<link title="IMDb" rel="info" href="http://www.imdb.com/title/tt0780504/"/>
+<link title="TMDb" rel="info" href="http://www.themoviedb.org/movie/64690-drive"/>
+<link title="Wikipedia" rel="info" href="http://en.wikipedia.org/wiki/Drive_(2011_film)"/>
+<link title="Amazon" rel="shop affiliate" href="http://www.amazon.com/Drive-UltraViolet-Digital-Copy-Blu-ray/dp/B0064NTZJO%3FSubscriptionId%3DAKIAIH55RAJODGWTXQLQ%26tag%3Dnospotv-20%26linkCode%3Dsp1%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0064NTZJO"/>
+</meta>
+<video xml:id="bullitt">
+  <title>Bullitt</title>
+  <published>1968-10-17</published>
+</video>
+<video xml:id="le-samourai">
+  <title xml:lang="fr">Le Samouraï</title>
+  <published>1967-10-25</published>
+</video>
+<video xml:id="drive">
+  <title>Drive</title>
+  <published>2011-05-20</published>
+  <director>Nicolas Winding Refn</director>
+  <distributor>FilmDistrict</distributor>
+  <writer><work xml:id="drive-2011-screenplay">
+   <entity>Hossein Amini</entity>
+   <link rel="derived-from" href="#drive-2005-book"/>
+ </work>
+ <work xml:id="drive-2005-book" type="novel">
+   <title>Drive</title>
+   <published>2005</published>
+   <entity>James Sallis</entity>			
+   <item-title>original story</item-title>
+   <link rel="derivative" href="#drive-2011-screenplay"/>
+ </work>
+</writer>
+<runtime>98</runtime>
+<rating glossary="#mpaa" code="R">
+ <reason>strong brutal bloody violence, language and some nudity</reason>
+</rating>
+<actor><starring><character><name>Driver</name>
+<entity>Ryan Gosling</entity>
+</character>
+<character><name>Irene</name>
+<entity>Carey Mulligan</entity>
+</character>
+<character><name>Shannon</name>
+<entity>Bryan Cranston</entity>
+</character>
+<character><name>Blanche</name>
+<entity>Christina Hendricks</entity>
+</character>
+<character><name>Nino</name>
+<entity>Ron Perlman</entity>
+</character>
+<character><name>Standard</name>
+<entity>Oscar Isaac</entity>
+</character>
+<character><name>Bernie Rose</name>
+<entity>Albert Brooks</entity>
+</character>
+</starring>
+</actor>
+</video>
+<video xml:id="bronson">
+  <ovml:title>Bronson</ovml:title>
+  <ovml:published>2008-10</ovml:published>
+</video>
+</ovml:ovml>
+<content type="xhtml">
+  <div xmlns="http://www.w3.org/1999/xhtml" vocab="http://vocab.nospoon.tv/ovml#" prefix="ovml: http://vocab.nospoon.tv/ovml#" class="entry-content">
+    <p>The Driver drives for hire. He has no other name, and no other life. When we first see him, he’s the wheelman for a getaway car, who runs from police pursuit not only by using sheer speed and muscle, but by coolly exploiting the street terrain and outsmarting his pursuers. By day, he is a stunt driver for action movies. The two jobs represent no conflict for him: He drives.</p>
+    <p>As played by Ryan Gosling, he is in the tradition of two iconic heroes of the 1960s: Clint Eastwood’s Man With No Name and Alain Delon in <cite typeof="Video" about="#le-samourai" property="title">Le Samouraï</cite>. He has no family, no history and seemingly few emotions. Whatever happened to him drove any personality deep beneath the surface. He is an existential hero, I suppose, defined entirely by his behavior.</p>
+    <p>That would qualify him as the hero of a mindless action picture, all CGI and crashes and mayhem. <cite typeof="Video" about="#drive" property="title">Drive</cite> is more of an elegant exercise in style, and its emotions may be hidden but they run deep. Sometimes a movie will make a greater impact by not trying too hard. The enigma of the driver is surrounded by a rich gallery of supporting actors who are clear about their hopes and fears, and who have either reached an accommodation with the Driver, or not. Here is still another illustration of the old Hollywood noir principle that a movie lives its life not through its hero, but within its shadows.</p>
+    <p>The Driver lives somewhere (somehow that’s improbable, since we expect him to descend full-blown into the story). His neighbor is Irene, played by Carey Mulligan, that template of vulnerability. She has a young son, Benecio (Kaden Leos), who seems to stir the Driver’s affection, although he isn’t the effusive type. They grow warm, but in a week, her husband, Standard (Oscar Isaac), is published from prison. Against our expectations, Standard isn’t jealous or hostile about the new neighbor, but sizes him up, sees a professional and quickly pitches a $1 million heist idea. That will provide the engine for the rest of the story, and as Irene and Benecio are endangered, the Driver reveals deep feelings and loyalties indeed, and undergoes enormous risk at little necessary benefit to himself.</p>
+    <aside class="pullquote">
+      <blockquote><p>The entire film, in fact, seems much more real than the usual action-crime-chase concoctions we’ve grown tired of.</p>
+    </blockquote>
+  </aside>
+  <p>The film by the Danish director Nicolas Winding Refn (<cite typeof="Video" about="#bronson" property="title">Bronson</cite>), based on a novel by James Sallis, peoples its story with characters who bring lifetimes onto the screen, in contrast to the Driver, who brings as little as possible. Ron Perlman seems to be a big-time operator working out of a small-time front, a pizzeria in a  strip mall. Albert Brooks, not the slightest bit funny, plays a producer of the kinds of B movies the Driver does stunt driving for—and also has a sideline in crime. These people are ruthless.</p>
+  <p>More benign is Bryan Cranston, as the kind of man you know the Driver must have behind him, a genius at auto repairs, restoration and supercharging.</p>
+  <p>I mentioned CGI earlier. <cite typeof="Video" about="#drive" property="title">Drive</cite> seems to have little of it. Most of the stunt driving looks real to me, with cars of weight and heft, rather than animated impossible fantasies. The entire film, in fact, seems much more real than the usual action-crime-chase concoctions we’ve grown tired of. Here is a movie with respect for writing, acting and craft. It has respect for knowledgable moviegoers. There were moments when I was reminded of <cite typeof="Video" about="#bullitt" property="title">Bullitt</cite>, which was so much better than the films it inspired. The key thing you want to feel, during a chase scene, is involvement in the purpose of the chase. You have to care. Too often we’re simply witnessing technology.</p>
+  <p>Maybe there was another reason I thought of <cite about="#bullitt">Bullitt</cite>. Ryan Gosling is a charismatic actor, as Steve McQueen was. He embodies presence and sincerity. Ever since his chilling young Jewish neo-Nazi in <span typeof="Video" about="#believer">
+  <cite property="title">The Believer</cite> (<time property="published" datetime="2001-01-19">2001</time>)</span>, he has shown a gift for finding arresting, powerful characters. An actor who can fall in love with a love doll and make us believe it, as he did in <span typeof="Video" about="#lars-real-girl">
+  <cite property="title">Lars and the Real Girl</cite> (<time property="published" datetime="2007-09-16">2007</time>)</span>, can achieve just about anything. <cite about="#drive">Drive</cite> looks like one kind of movie in the ads, and it is that kind of movie. It is also a rebuke to most of the movies it looks like.</p>
+</div>
+</content>
 </entry>
