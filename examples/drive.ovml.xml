@@ -133,7 +133,7 @@
         <!-- function vs. venue = event / specific building where an event is held -->
         <name xml:lang="fr">Festival de Cannes</name>
         <nickname>Cannes</nickname>
-        <site>http://www.festival-cannes.com/</site>
+        <uri>http://www.festival-cannes.com/</uri>
       </function>
       <medium>film</medium>
     </showing>

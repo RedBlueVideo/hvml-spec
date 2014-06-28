@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--A supplemental metadata database for YouTube videos-->
+<database>
+	<video>
+		<id>V1Lh4aCHePQ</id>
+		<title id="connodewrs-2">The ConnoDEWrs Part 2</title>
+		<release date="2009"></release>
+		<category>
+			<label>Comedy</label>
+		</category>
+		<description type="html">
+			<p>As a condition of winning Mountain Dew’s <a href="http://12seconds.tv/campaign/dewlabs">DEW Labs Challenge</a> with our <a href="#connodewrs">previous video</a>, we had to create a follow-up video delivering our opinions of the exclusive prototype flavors they sent us, to count as votes in determining the semifinalists for their “DEWmocracy” consumer-designed soda campaign.</p>
+		</description>
+		<resource>
+			<width>1920</width>
+			<height>1080</height>
+			<fps rate="24000" scale="1001" />
+			<frametype abbr="p">progressive</frametype>
+		</resource>
+	</video>
+	<video>
+		<id>aN-inkfMMD4</id>
+		<title>The ConnoDEWrs</title>
+		<description type="html">
+			<p>For the ConnoDEWrs, the Art of Good Taste is a way of life.</p>
+			<p>1 of 50 winning entries in the Mountain Dew <a href="http://12seconds.tv/campaign/dewlabs">DEW Labs Challenge</a>. The video was subsequently used in <a href="http://www.youtube.com/watch?v=ZEnFVkFMPKg" title="Watch “DEWmocracy is Back!” on YouTube">Mountain Dew</a> <a title="Watch “DEW Labs Winning Flavors!” on YouTube" href="http://www.youtube.com/watch?v=4mvM-J3P63I">advertising</a>.</p>
+		</description>
+		<resource>
+			<width>1920</width>
+			<height>1080</height>
+			<fps rate="24000" scale="1001" />
+			<frametype>progressive</frametype>
+		</resource>
+		<production>
+			<roles>
+				<label>Writing</label>
+				<label>Casting</label>
+				<label>Costuming</label>
+				<label>Set Dressing</label>
+				<label>Photography</label>
+				<label>Lighting</label>
+				<label>Editing</label>
+				<label>Encoding</label>
+			</roles>
+			<tools type="html">
+				<label id="hdc-sd9"><![CDATA[Panasonic <abbr>HC-SD9</abbr>]]></label>
+				<label id="avs">AviSynth</label>
+			</tools>
+			<tech type="html">
+				<label id="avchd"><![CDATA[<abbr title="Advanced Video Coding High Definition">AVCHD</abbr>]]></label>
+				<label id="sdhc"><![CDATA[<abbr title="Secure Digital High Capacity">SDHC</abbr>]]></label>
+			</tech>
+		</production>
+	</video>
+	<video>
+		<id>XJIBf17rQzQ</id>
+		<title>Albinos &amp; Demons</title>
+		<description type="html">
+			<p>Silas pays a visit to Dan Brown to find out why he isn't in <a href="http://www.imdb.com/title/tt0808151/"><cite>Angels &amp; Demons</cite></a>.</p>
+			<p>A metafictional parody of the “The Da Vinci Code” book/movie series.</p>
+		</description>
+		<resource>
+			<width>1920</width>
+			<height>1080</height>
+			<fps rate="24000" scale="1001" />
+			<frametype abbr="p">progressive</frametype>
+		</resource>
+		<production>
+			<roles>
+				<label>Photography</label>
+				<label>Lighting</label>
+				<label>Editing</label>
+				<label>Encoding</label>
+			</roles>
+			<tools type="html">
+				<label id="hdc-sd9"><![CDATA[Panasonic <abbr>HDC-SD9</abbr>]]></label>
+				<label id="avs">AviSynth</label>
+			</tools>
+			<tech type="html">
+				<label id="avchd"><![CDATA[<abbr title="Advanced Video Coding High Definition">AVCHD</abbr>]]></label>
+				<label id="sdhc"><![CDATA[<abbr title="Secure Digital High Capacity">SDHC</abbr>]]></label>
+			</tech>
+		</production>
+	</video>
+	<video>
+		<id>kdp8n1gyNSE</id>
+		<title>The Degenerates</title>
+		<release date="2009"></release>
+		<rating title="YouTube Shows &amp; Movies Labels" standard="http://help.youtube.com/support/youtube/bin/answer.py?hl=en&amp;answer=146399">
+			<label title="Strong language">L</label>
+			<label title="Mildly violent or disturbing">V</label>
+			<label title="Mild drug abuse">D</label>
+		</rating>
+		<category>
+			<label>Drama</label>
+		</category>
+		<resource>
+			<width>1920</width>
+			<height>1080</height>
+			<fps rate="24000" scale="1001" />
+			<frametype abbr="p">progressive</frametype>
+		</resource>
+		<description type="html">
+			<p>Gangsters attempt to collect money owed.</p>
+			<p>Produced in association with Kingdom for a <a href="http://www.umb.edu"><abbr title="University of Massachusetts">UMass</abbr> Boston</a> Video Production class.</p>
+		</description>
+		<production>
+			<roles>
+				<label>Photography</label>
+				<label>Lighting</label>
+				<label>Music Recording</label>
+				<label>Digital Intermediate</label>
+			</roles>
+			<tools>
+				<label id="hdc-sd9"><![CDATA[Panasonic <abbr>HDC-SD9</abbr>]]></label>
+				<label id="vdub">VirtualDub</label>
+				<label id="avs">AviSynth</label>
+			</tools>
+			<tech>
+				<label id="avchd"><![CDATA[<abbr title="Advanced Video Coding High Definition">AVCHD</abbr>]]></label>
+				<label id="sdhc"><![CDATA[<abbr title="Secure Digital High Capacity">SDHC</abbr>]]></label>
+			</tech>
+		</production>
+	</video>
+	<video>
+		<title>Recession (2008)</title>
+		<release date="2008-11-13T09:32"></release>
+		<link>http://blip.tv/file/1463972</link>
+		<category>
+			<label>Horror</label>
+		</category>
+		<description>
+			<p>Michael Langer (Ken Breese), struggling to provide for his family in the middle of an economic crisis, responds to an ad on the Internet to make some quick cash. But when his prospective employer Walter Tisdale (Dennis Hurley) asks him to do the truly macabre, does Michael have what it takes to overcome his demons?</p>
+			<p>Shot and edited for ImprovBoston Film.</p>
+		</description>
+		<resource>
+			<width>1280</width>
+			<height>720</height>
+			<poster>/projects/2008/recession/poster.png</poster>
+		</resource>
+		<resource>
+			<width>480</width>
+			<height>300</height>
+			<poster>http://a.images.blip.tv/ImprovBoston-Recession666.png</poster>
+			<object type="application/x-shockwave-flash" data="http://blip.tv/play/AdnlLgI" width="480" height="300">
+				<param name="movie" value="http://blip.tv/play/AdnlLgI" />
+				<param name="allowFullScreen" value="true" />
+				<param name="allowscriptaccess" value="true" />
+			</object>
+		</resource>
+	</video>
+	<video>
+		<id>6uIWf-_ueiE</id>
+		<title>Jerk</title>		
+		<resource>
+			<width>720</width>
+			<height>480</height>
+			<par x="" y="" approx="0.9">D1/DV Standard</par>
+			<fps rate="30000" scale="1001" />
+		</resource>
+		<rating title="YouTube Shows &amp; Movies Labels" standard="http://help.youtube.com/support/youtube/bin/answer.py?hl=en&amp;answer=146399">
+			<label title="Mildly violent or disturbing">V</label>
+		</rating>
+		<production>
+			<roles>
+				<label>Writing</label>
+				<label>Storyboarding</label>
+				<label>Location Scouting</label>
+				<label>Casting</label>
+				<label>Directing</label>
+				<label>Photography</label>
+				<label>Editing</label>
+				<label>Encoding</label>
+			</roles>
+			<tools>
+				<label id="ppro">Premiere Pro</label>
+				<label id="zr300">Canon <abbr>ZR300</abbr></label>				
+			</tools>
+			<tech>
+				<label id="minidv"><![CDATA[<abbr title="miniDV Digital Video Casette">mini<abbr>DV</abbr></abbr>]]></label>
+				<label id="ieee-1394">IEEE 1394 (“FireWire”)</label>
+			</tech>
+		</production>
+	</video>
+	<video>
+		<id>93-eABWeD0M</id>
+		<title>Twenty-One</title>
+		<release date="2007">
+			<function>Reel Teens USA</function>
+			<program src="/docs/reel-teens-usa-2007.pdf#page=3" type="pdf" />
+		</release>
+		<release date="2006-05-06">
+			<venue>The Institute of Contemporary Art</venue>
+			<function>“Take A Seat”: 2006 Spring FastForward Screening</function>
+			<program></program>
+		</release>
+		<poster>/projects/2006/twenty-one/poster.png</poster>
+		<resource>
+			<width>656</width>
+			<height>360</height>
+			<frametype abbr="p">progressive</frametype>
+			<par x="1" y="1" />
+			<fps rate="30000" scale="1001" approx="29.97">30</fps>
+			<vidcodec>
+				<bitrate type=""></bitrate>
+			</vidcodec>
+			<audcodec>
+				<bitrate>160000</bitrate>
+				<samplerate>48000</samplerate>
+				<bitdepth></bitdepth>
+			</audcodec>
+			<source src="/projects/2006/twenty-one/video.mp4" type="video/mp4; codecs=&quot;avc1.4D401E, mp4a.40.2&quot;" />
+		</resource>
+		<category>
+			<label>Drama</label>
+			<label>Neo-noir</label>
+		</category>
+		<!--party="1st"-->
+		<rating title="YouTube Shows &amp; Movies Labels" standard="http://help.youtube.com/support/youtube/bin/answer.py?hl=en&amp;answer=146399">
+			<label title="Explicit language">L+</label>
+			<label title="Mild sexual situations">S</label>
+			<label title="Mildly violent or disturbing">V</label>
+			<label title="Mild drug abuse">D</label>
+		</rating>
+		<description type="html">
+			<p>An individual deals with a recent breakup on Christmas Eve.</p>
+			<p>Produced in association with <a href="http://www.icaboston.org/programs/learn/media-classes/fastforward/">FastForward</a> at the <a href="http://www.icaboston.org">Institute of Contemporary Art</a>.</p>
+			<p>Originally released in 2006, this 2010 remaster restores the short to its intended aspect ratio, and presents the footage progressively for the first time using a high-quality deinterlacer to optimize the viewing experience on the Web. Compare with <a href="http://http://www.youtube.com/watch?v=6WOipyJgh7Y">the original</a>.</p>
+		</description>
+		<recognition type="html">
+									<ol>
+										<li><a href="http://reelteensusa.com">Reel Teens <abbr title="United States of America">USA</abbr></a> 2007 Film Festival (Visual Arts Category), Hunter, <abbr title="New York">NY</abbr> —<i>Selected for public screening</i>
+											<ul>
+												<li><a href="/docs/reel-teens-usa-2007.pdf#page=3">Festival Program</a> (PDF)</li>
+											</ul>
+										</li>
+										<li>Institute of Contemporary Art, “Take A Seat”: 2006 Spring FastForward Screening, Boston, <abbr title="Massachusetts">MA</abbr> —<i>Public screening</i></li>
+									</ol>
+		</recognition>
+		<production>
+			<roles>
+				<label>Writing: Short Story</label>
+				<label>Writing: Screenplay Adaptation</label>
+				<label>Storyboarding</label>
+				<label>Location Scouting</label>
+				<label>Casting</label>
+				<label>Directing</label>
+				<label>Photography</label>
+				<label>Lighting</label>
+				<label>Editing</label>
+				<label>Encoding</label>
+			</roles>
+			<tools>
+				<label>Final Cut Pro</label>
+				<label>Canon Optura 40</label>
+			</tools>
+			<tech>
+				<label id="minidv"><![CDATA[<abbr title="miniDV Digital Video Casette">mini<abbr>DV</abbr></abbr>]]></label>
+				<label id="ieee-1394">IEEE 1394 (“FireWire”)</label>
+			</tech>
+		</production>
+	</video>
+	<video>
+		<id>bhovj-WlES8</id>
+		<title>No School on Monday</title>
+		<release date="2006"></release>
+		<category>
+			<label>Animated</label>
+			<label>Experimental</label>
+		</category>
+		<description type="html">
+			<p>A child dons a cape and goes on an adventure.</p>
+			<p>Produced in association with <a href="http://www.icaboston.org/programs/learn/media-classes/fastforward/">FastForward</a> and Schnard1 Productions at the <a href="http://www.icaboston.org">Institute of Contemporary Art</a>.</p>
+		</description>
+		<resource>
+			<!--<width>1920</width>
+			<height>1080</height>-->
+			<par x="1" y="1" />
+			<fps rate="30000" scale="1001" approx="29.97" />
+			<!--<source src="/projects/2006/no-school-on-monday/video.mp4" type="video/mp4; codecs=&quot;avc1.4D401E, mp4a.40.2&quot;" />-->
+		</resource>
+		<recognition type="html">
+		<!-- Whitespace required to hack html into alignment -->
+									<ol>
+										<li><a href="http://www.rosekennedygreenway.org">Rose Fitzgerald Kennedy Greenway</a> <a href="http://en.wikipedia.org/wiki/Rose_Kennedy_Greenway#Inaugural_Celebration">Inaugural Celebration</a>, <time datetime="2008-10-04">October 4th, 2008</time> —<i>Selected for public screening</i></li>
+										<li>Listen Up!’s <a href="http://www.listenup.org/screeningroom/cat.php?view=765c9adbf8bc4388fa7ba11bb0d2e27c">VIP2007 Animation Collection</a> —<i>Selected for online viewing</i></li>
+										<li>The <a href="http://www.cpsd.us"><abbr title="Cambridge Public Schools" class="initialism">CPS</abbr></a> Archives, on <abbr title="Cambridge Educational Access" class="initialism">CES</abbr>’ <a href="http://www.cpsd.us/ceatv/channels.htm">SMART TV 98</a>, April 2006 —<i>Selected for public broadcasting</i></li>
+										<li>WGBH’s “<a href="http://www.wgbh.org/article?item_id=3334710">Eye on Education</a>” Student Film Festival —<i>Selected for online viewing</i></li>
+										<li>Institute of Contemporary Art, “Pipe Dreams”: Winter 2006 FastForward Screening, Boston, MA —<i>Public screening</i></li>
+									</ol>
+		</recognition>
+		<production>
+			<roles>
+				<label>Character Design</label>
+				<label>Digitization</label>
+				<label>Rotoscoping</label>
+				<label>Vector Illustration</label>
+				<label>Inbetweening</label>
+				<label>Encoding</label>
+			</roles>
+			<tools>
+				<label id="illustrator"><![CDATA[Illustrator<sup>®</sup>]]></label>
+				<label id="flash"><![CDATA[Flash<sup>®</sup>]]></label>
+				<label id="wacom"><![CDATA[Wacom<sup>®</sup> Drawing Tablet]]></label>
+				<label>Pencil</label>
+				<label>Paper</label>
+				<label>Scanner</label>
+			</tools>
+			<tech>
+				<label id="swf"><![CDATA[<abbr title="Shockwave Flash">SWF</abbr>]]></label>
+			</tech>
+		</production>
+		<notes><![CDATA[
+			http://www.wickedlocal.com/cambridge/fun/entertainment/arts/x563263813
+			
+			Short animated piece; collaboration with Isnard Dupoux for the FastForward Teen Video Program. Tools used: Pencil on paper; digital pen; Macromedia Flash. Part of the "Pipe Dreams" series.
+	
+			Shown:
+			- Winter 2006 at the Institute of Contemporary Art in Boston, MA.
+			- Part of WGBH's "Eye on Education" series http://www.wgbh.org/article?item_id=3334710
+			- Listen Up! VIP2007 Animation Collection http://www.listenup.org/screeningroom/cat.php?view=765c9adbf8bc4388fa7ba11bb0d2e27c
+			- Oct. 4th, 2008 at the Rose Fitzgerald Kennedy Greenway Inaugural Celebration
+		]]></notes>
+	</video>	
+</database>

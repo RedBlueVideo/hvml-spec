@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Content-type: application/ovml+xml; charset=UTF-8; -->
+<ovml xmlns="http://vocab.nospoon.tv/ovml#" xmlns:ovml="http://vocab.nospoon.tv/ovml#">
+  <meta>
+    <link rel="glossary" href="/glossary.ovml" />
+  </meta>
+  <!-- video = any creative work whose canonical representation is motion-based (visual changes over time) -->
+  <video type="feature" xml:lang="en" xml:id="redblue-test">
+    <title>RedBlue Test</title>
+    <published>2014</published>
+    <runtime>variable</runtime>
+    <description>How does Sam react?</description>
+    <poster>/path/to/poster.png</poster>
+    <presentation><!-- Renamed from resource -->
+      <width>640</width>
+      <height>360</height>
+      <frametype abbr="p">progressive</frametype>
+      <par x="1" y="1" />
+      <fps rate="24000" scale="1001" approx="23.976" />
+      <file xml:id="webm-360p" ovml:id="intro"><!-- ovml: is option but serves to disambiguate -->
+        <uri>/clips/video.webm</uri>
+        <link rel="alternate" href="#360p-mp4" />
+        <container>
+          <name>WebM</name>
+          <mime>video/webm</mime>
+        </container>
+        <vidcodec>
+          <name>VP8</name>
+          <mime>vp8</mime>
+          <bitrate type="cbr">100</bitrate><!-- made-up -->
+        </vidcodec>
+        <audcodec>
+          <name>Vorbis</name>
+          <mime>vorbis</mime>
+          <bitrate>160000</bitrate>
+          <samplerate>48000</samplerate>
+          <bitdepth></bitdepth>
+        </audcodec>
+      </file>
+      <file xml:id="mp4-360p" ovml:id="intro">
+        <uri>/clips/video.mp4</uri>
+        <link rel="alternate" href="#360p-webm" />
+      </file>
+      <playlist type="nonlinear"><!-- linear|nonlinear, default linear. Processed in order w/branching; maybe doesn't need "nonlinear", though may be useful for queuing up relevant processes or letting the user know that this is interactive. Perhaps nonlinear prevents the playlist from executing sequentially. -->
+        <file xml:id="part-01" idref="#file-intro">
+          <on event="end"><!-- the end of the file, whenever that is; may also be milliseconds. -->
+            <goto href="#how-does-sam-react" />
+          </on>
+        </file><!-- This represents either the webm or mp4 version -->
+        <choices xml:id="how-does-sam-react">
+          <name>How does Sam react?</name>
+          <file idref="#intro-choice" /><!-- Play something in the bg while user makes decision -->
+          <choice xml:id="silly">
+            <name>Silly</name>
+            <on event="select"><!-- select event is only available when parent = choice -->
+              <goto href="#part-01a" />
+            </on>
+          </choice>
+          <choice xml:id="crazy">
+            <name>Crazy</name>
+            <on event="select">
+              <goto href="#part-01b" />
+            </on>
+          </choice>
+        </choices>
+        <file xml:id="part-01a" idref="#file-silly">
+          <on event="end">
+            <goto href="#credits" />
+          </on>
+        </file>
+        <file xml:id="part-01b" idref="#file-crazy">
+          <on event="end">
+            <goto href="#credits" />
+          </on>
+        </file>
+        <file xml:id="credits" idref="#file-credits" />
+      </playlist>
+    </presentation>
+  </video>
+</ovml>
