@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Content-type: application/ovml+xml; charset=UTF-8; -->
-<ovml xmlns="http://vocab.nospoon.tv/ovml#" xmlns:ovml="http://vocab.nospoon.tv/ovml#">
+<ovml xmlns="http://vocab.nospoon.tv/ovml#" xmlns:ovml="http://vocab.nospoon.tv/ovml#" xmlns:xlink="http://www.w3.org/1999/xlink">
   <meta>
     <link rel="glossary" href="/glossary.ovml" />
   </meta>
@@ -11,15 +11,14 @@
     <runtime>variable</runtime>
     <description>How does Sam react?</description>
     <poster>/path/to/poster.png</poster>
-    <presentation><!-- Renamed from resource -->
+    <presentation xlink:type="extended"><!-- Renamed from resource -->
       <width>640</width>
       <height>360</height>
       <frametype abbr="p">progressive</frametype>
       <par x="1" y="1" />
       <fps rate="24000" scale="1001" approx="23.976" />
-      <file xml:id="webm-360p" ovml:id="intro"><!-- ovml: is option but serves to disambiguate -->
+      <file xml:id="webm-360p" xlink:type="resource" xlink:label="file-intro"><!--  -->
         <uri>/clips/video.webm</uri>
-        <link rel="alternate" href="#360p-mp4" />
         <container>
           <name>WebM</name>
           <mime>video/webm</mime>
@@ -37,19 +36,19 @@
           <bitdepth></bitdepth>
         </audcodec>
       </file>
-      <file xml:id="mp4-360p" ovml:id="intro">
+      <file xml:id="mp4-360p" xlink:type="resource" xlink:label="file-intro">
         <uri>/clips/video.mp4</uri>
-        <link rel="alternate" href="#360p-webm" />
       </file>
       <playlist type="nonlinear"><!-- linear|nonlinear, default linear. Processed in order w/branching; maybe doesn't need "nonlinear", though may be useful for queuing up relevant processes or letting the user know that this is interactive. Perhaps nonlinear prevents the playlist from executing sequentially. -->
-        <file xml:id="part-01" idref="#file-intro">
+        <file xml:id="part-01" xlink:label="part-01">
+          <link xlink:type="arc" xlink:from="part-01" xlink:to="file-intro" />
           <on event="end"><!-- the end of the file, whenever that is; may also be milliseconds. -->
             <goto href="#how-does-sam-react" />
           </on>
         </file><!-- This represents either the webm or mp4 version -->
         <choices xml:id="how-does-sam-react">
           <name>How does Sam react?</name>
-          <file idref="#intro-choice" /><!-- Play something in the bg while user makes decision -->
+          <file aref="intro-choice" /><!-- Play something in the bg while user makes decision -->
           <choice xml:id="silly">
             <name>Silly</name>
             <on event="select"><!-- select event is only available when parent = choice -->
@@ -63,17 +62,17 @@
             </on>
           </choice>
         </choices>
-        <file xml:id="part-01a" idref="#file-silly">
+        <file xml:id="part-01a" aref="file-silly">
           <on event="end">
             <goto href="#credits" />
           </on>
         </file>
-        <file xml:id="part-01b" idref="#file-crazy">
+        <file xml:id="part-01b" aref="file-crazy">
           <on event="end">
             <goto href="#credits" />
           </on>
         </file>
-        <file xml:id="credits" idref="#file-credits" />
+        <file xml:id="credits" aref="file-credits" />
       </playlist>
     </presentation>
   </video>
