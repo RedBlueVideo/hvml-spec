@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Content-type: application/ovml+xml; charset=UTF-8; -->
 <ovml xmlns="http://vocab.nospoon.tv/ovml#" xmlns:ovml="http://vocab.nospoon.tv/ovml#" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <meta>
-    <link rel="glossary" href="/glossary.ovml" />
-  </meta>
+  <link rel="glossary" xlink:href="/glossary.ovml" />
   <!-- video = any creative work whose canonical representation is motion-based (visual changes over time) -->
   <video type="feature" xml:lang="en" xml:id="redblue-test">
     <title>RedBlue Test</title>
     <published>2014</published>
     <runtime>variable</runtime>
     <description>How does Sam react?</description>
-    <poster>/path/to/poster.png</poster>
-    <presentation xlink:type="extended"><!-- Renamed from resource -->
-      <width>640</width>
-      <height>360</height>
+    <poster xml:id="poster-1080" width="1920" height="1080" xlink:href="/path/to/poster-1920x1080.png" />
+    <!--poster width="" height="" /-->
+    <presentation><!-- Renamed from resource -->
+      <!-- Frame type, PAR, and frame rate are consistent across all files so no need to specify one for each. -->
       <frametype abbr="p">progressive</frametype>
       <par x="1" y="1" />
-      <fps rate="24000" scale="1001" approx="23.976" />
-      <file xml:id="webm-360p" xlink:type="resource" xlink:label="file-intro"><!--  -->
-        <uri>/clips/video.webm</uri>
+      <fps rate="24000" scale="1001" />
+      <!-- We are using XLink 1.1 to avoid having to specify xlink:type. -->
+      <!-- labels are shareable identifiers, similar to xlink:label but not limited to xlink:type="resource|locator". -->
+      <file xml:id="webm-360p" label="file-intro" xlink:href="/clips/intro-360.webm">
+        <!-- Specify equivalent files (in terms of quality, dimensions, etc.) but in a different format. -->
+        <link rel="alternate" xlink:href="#mp4-360p" />
+        <!-- Instrinsic width and height in pixels. -->
+        <width>640</width>
+        <height>360</height>
+        <!-- The following specify exactly what the file format is, similar to html's codecs attribute but more specific, and with options for human-readability. The <names> could be omitted in lieu of a mime->name lookup in some database. -->
         <container>
           <name>WebM</name>
           <mime>video/webm</mime>
@@ -27,23 +32,23 @@
           <name>VP8</name>
           <mime>vp8</mime>
           <bitrate type="cbr">100</bitrate><!-- made-up -->
+          <bitdepth></bitdepth>
         </vidcodec>
         <audcodec>
           <name>Vorbis</name>
           <mime>vorbis</mime>
-          <bitrate>160000</bitrate>
+          <bitrate>320000</bitrate>
           <samplerate>48000</samplerate>
-          <bitdepth></bitdepth>
+          <bitdepth>24</bitdepth>
         </audcodec>
       </file>
-      <file xml:id="mp4-360p" xlink:type="resource" xlink:label="file-intro">
-        <uri>/clips/video.mp4</uri>
-      </file>
-      <playlist type="nonlinear"><!-- linear|nonlinear, default linear. Processed in order w/branching; maybe doesn't need "nonlinear", though may be useful for queuing up relevant processes or letting the user know that this is interactive. Perhaps nonlinear prevents the playlist from executing sequentially. -->
-        <file xml:id="part-01" xlink:label="part-01">
-          <link xlink:type="arc" xlink:from="part-01" xlink:to="file-intro" />
+      <file xml:id="mp4-360p" label="file-intro" xlink:href="/clips/intro-360.mp4" />
+      <!-- linear|nonlinear, default linear. Processed in order w/branching; maybe doesn't need "nonlinear", though may be useful for queuing up relevant processes or letting the user know that this is interactive. Perhaps nonlinear prevents the playlist from executing sequentially. -->
+      <playlist type="nonlinear">
+        <!-- Use xpointer IRIs to point to the "platonic ideal" of a resource, i.e. all variations that share a common label attribute value. The returned node set, if non-empty, should be further filtered by the UA for canPlayType(), available bandwidth, etc. -->
+        <file xml:id="part-01" xlink:href="#xpointer(//file[@label='file-intro'])">
           <on event="end"><!-- the end of the file, whenever that is; may also be milliseconds. -->
-            <goto href="#how-does-sam-react" />
+            <goto action="play" xlink:href="#how-does-sam-react" /><!-- action="play" is default. action="pause" alternate. this is a freeform attribute that is up to implementations to decide what to do with it. for instance, you could define some custom javascript to act on this. -->
           </on>
         </file><!-- This represents either the webm or mp4 version -->
         <choices xml:id="how-does-sam-react">
