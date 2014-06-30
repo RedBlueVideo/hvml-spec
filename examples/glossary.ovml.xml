@@ -269,6 +269,12 @@
       </format>
       <description />
     </medium>
+    <medium xml:id="webm-vp8-vorbis" code="WebM">
+      <title>WebM</title>
+      <format>
+        <tag>digital</tag>
+      </format>
+    </medium>
   </glossary>
   <glossary for="sync" xml:id="services">
     <service xml:id="twitter">
