@@ -1,5 +1,6 @@
 HVML – Hypervideo Markup Language
 ====
+(Formerly known as “OVML” for Open Video Markup Language)
 
 HVML is an RDFa-compatible, XML-based markup language for codifying information pertaining to audio-visual media such as films, television, home movies, or any other moving image, digital or analog.
 
@@ -22,7 +23,7 @@ Inspired by the article [“How The Television Will Be Revolutionized: The Excit
 
 ## Cheat Sheet
 
-- Content-Type: `application/hvml+xml`, `application/ovml+xml` (legacy)
-- Extensions: `.hvml`, `.ovml` (legacy), `.xml`
-- Namespace: `http://vocab.nospoon.tv/ovml#`
-- Standard namespace prefix: `hvml`, `ovml` (legacy)
+- Content-Type: `application/hvml+xml`, `application/ovml+xml` (deprecated)
+- Extensions: `.hvml`, `.ovml` (deprecated), `.xml`
+- Namespace: `http://vocab.nospoon.tv/ovml#` (deprecated; new namespace URI is pending)
+- Standard namespace prefix: `hvml`, `ovml` (deprecated)
