@@ -27,3 +27,7 @@ Inspired by the article [“How The Television Will Be Revolutionized: The Excit
 - Extensions: `.hvml`, `.ovml` (deprecated), `.xml`
 - Namespace: `http://vocab.nospoon.tv/ovml#` (deprecated; new namespace URI is pending)
 - Standard namespace prefix: `hvml`, `ovml` (deprecated)
+
+## Specification
+
+See the [Wiki](https://github.com/RedBlueVideo/hvml/wiki/The-Elements-of-HVML) (work-in-progress).
