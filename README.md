@@ -8,7 +8,9 @@ Its primary goal is to provide a standardized syntax and interface for storing a
 
 It is a similar technology to [MPEG-7](http://en.wikipedia.org/wiki/MPEG-7), but more limited in scope (to make it easier for humans to understand and author), and being [free](http://creativecommons.org/publicdomain/zero/1.0/) of [patent encumbrance](http://www.internetnews.com/infra/article.php/2196421/Licensing+Firm+Preps+for+MPEG7+Standard.htm).
 
-Possible uses:
+Inspired by the article [“How The Television Will Be Revolutionized: The Exciting Future of the iPad, Internet TV, and Web 3.0”](http://www.accelerating.org/articles/televisionwillberevolutionized.html), which talks about an “OVML”, its uses cases do not coincide 100% with the ones the author mentions.
+
+## Use Cases
 
 - Video players displaying metadata to an end user, as with MP3 [ID3](http://id3.org/) tags.
 - Search engines displaying metadata to an end user, as with [schema.org](http://schema.org/VideoObject) (but with a more specialized vocabulary).
@@ -18,8 +20,6 @@ Possible uses:
 - Content publishers wishing to store/query/display information about video media being delivered and/or discussed.
 - Educators and students wishing to teach or understand the minute details of films and video.
 - Programmers wishing to ingest, convert, display, or splice video files who must reference technical details like frame rate or pixel aspect ratio without relying on the often erroneous or incomplete information reported by the container.
-
-Inspired by the article [“How The Television Will Be Revolutionized: The Exciting Future of the iPad, Internet TV, and Web 3.0”](http://www.accelerating.org/articles/televisionwillberevolutionized.html), which talks about an “OVML”, its uses cases do not coincide 100% with the ones the author mentions.
 
 ## Cheat Sheet
 
