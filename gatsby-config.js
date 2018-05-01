@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'HyperVideo Markup Language',
+    title: 'HVML – Hypervideo Markup Language',
     author: 'Hugh Guiney',
     description: 'Documentation for HVML',
     siteUrl: 'https://hypervideo.tech/',

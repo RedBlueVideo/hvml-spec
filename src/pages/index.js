@@ -3,33 +3,39 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-// import Intro from '../components/Intro'
+// import intro from '../components/intro'
 import { rhythm } from '../utils/typography'
 
 class PagesIndex extends React.Component {
   render() {
     const siteTitle = get( this, 'props.data.site.siteMetadata.title' );
-    const posts = get( this, 'props.data.all.edges' );
+    const posts = get( this, 'props.data.feed.edges' );
     const intro = get( this, 'props.data.intro.edges[0].node' );
+    const useCases = get( this, 'props.data.useCases.edges[0].node' );
+    const cheatSheet = get( this, 'props.data.cheatSheet.edges[0].node' );
 
     return (
       <article>
         <Helmet title={siteTitle} />
-        {/* <Intro /> */}
-        <div dangerouslySetInnerHTML={{ __html: intro.html }} />
-        <h2>The Elements of HVML</h2>
-        <ol>
-        { posts.map( ( { node } ) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <li key={node.fields.slug}>
-              <Link to={node.fields.slug}>
-                {title}
-              </Link>
-            </li>
-          )
-        } ) }
-        </ol>
+        {/* <intro /> */}
+        <section dangerouslySetInnerHTML={ { __html: intro.html } }></section>
+        <section dangerouslySetInnerHTML={ { __html: useCases.html } }></section>
+        <section dangerouslySetInnerHTML={ { __html: cheatSheet.html } }></section>
+        <section>
+          <h2>Specification</h2>
+          <ol>
+          { posts.map( ( { node } ) => {
+            const title = get( node, 'frontmatter.title' ) || node.fields.slug;
+            return (
+              <li key={ node.fields.slug }>
+                <Link to={ node.fields.slug }>
+                  { title }
+                </Link>
+              </li>
+            )
+          } ) }
+          </ol>
+        </section>
       </article>
     );
   }
@@ -44,10 +50,9 @@ export const pageQuery = graphql`
         title
       }
     }
-    intro: allMarkdownRemark(filter: { frontmatter: { path: { eq: "/" } } }) {
+    intro: allMarkdownRemark(filter: { fields: { slug: { eq: "/intro/" } } }) {
       edges {
         node {
-          excerpt
           html
           fields {
             slug
@@ -59,7 +64,35 @@ export const pageQuery = graphql`
         }
       }
     }
-    all: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { frontmatter: { path: { ne: "/" } } }) {
+    useCases: allMarkdownRemark(filter: { fields: { slug: { eq: "/use-cases/" } } }) {
+      edges {
+        node {
+          html
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "DD MMMM, YYYY")
+            title
+          }
+        }
+      }
+    }
+    cheatSheet: allMarkdownRemark(filter: { fields: { slug: { eq: "/cheat-sheet/" } } }) {
+      edges {
+        node {
+          html
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "DD MMMM, YYYY")
+            title
+          }
+        }
+      }
+    }
+    feed: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { frontmatter: { path: { ne: "/" } } }) {
       edges {
         node {
           excerpt
