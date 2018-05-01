@@ -15,25 +15,26 @@ class Template extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-              backgroundImage: 'none'
-            }}
-            to={'/'}
-          >
-            HVML
-          </Link>
-        </h1>
+        <hgroup style={ {
+          ...scale(1.5),
+          marginBottom: rhythm(1.5),
+          marginTop: 0,
+        } }>
+          <h1>
+            <Link
+              style={{
+                boxShadow: 'none',
+                textDecoration: 'none',
+                color: 'inherit',
+                backgroundImage: 'none'
+              }}
+              to={'/'}
+            >
+              HVML
+            </Link>
+          </h1>
+          <h2 style={ { ...rhythm( 0.5 ) } }>Hypervideo Markup Language</h2>
+        </hgroup>
       )
     } else {
       header = (
