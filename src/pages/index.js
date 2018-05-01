@@ -8,11 +8,9 @@ import { rhythm } from '../utils/typography'
 
 class PagesIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.all.edges')
-    const intro = get(this, 'props.data.intro.edges[0].node')
-
-    console.log(intro);
+    const siteTitle = get( this, 'props.data.site.siteMetadata.title' );
+    const posts = get( this, 'props.data.all.edges' );
+    const intro = get( this, 'props.data.intro.edges[0].node' );
 
     return (
       <article>
@@ -21,7 +19,7 @@ class PagesIndex extends React.Component {
         <div dangerouslySetInnerHTML={{ __html: intro.html }} />
         <h2>The Elements of HVML</h2>
         <ol>
-        {posts.map(({ node }) => {
+        { posts.map( ( { node } ) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <li key={node.fields.slug}>
@@ -30,10 +28,10 @@ class PagesIndex extends React.Component {
               </Link>
             </li>
           )
-        })}
+        } ) }
         </ol>
       </article>
-    )
+    );
   }
 }
 
@@ -46,7 +44,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    intro: allMarkdownRemark(filter: { fields: { slug: { eq: "/intro/" } } }) {
+    intro: allMarkdownRemark(filter: { frontmatter: { path: { eq: "/" } } }) {
       edges {
         node {
           excerpt
@@ -61,7 +59,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    all: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { fields: { slug: { ne: "/intro/" } } }) {
+    all: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { frontmatter: { path: { ne: "/" } } }) {
       edges {
         node {
           excerpt

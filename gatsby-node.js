@@ -3,11 +3,11 @@ const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
+exports.createPages = ( { graphql, boundActionCreators } ) => {
   const { createPage } = boundActionCreators
 
-  return new Promise((resolve, reject) => {
-    const page = path.resolve('./src/templates/page.js')
+  return new Promise( ( resolve, reject ) => {
+    const page = path.resolve( './src/templates/page.js' )
     resolve(
       graphql(
         `
@@ -27,30 +27,21 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             }
           }
         `
-      ).then(result => {
-        if (result.errors) {
-          console.log(result.errors)
-          reject(result.errors)
+      ).then( result => {
+        if ( result.errors ) {
+          console.log( result.errors );
+          reject( result.errors );
         }
 
         // Create blog posts pages.
         const posts = result.data.allMarkdownRemark.edges;
 
-        _.each(posts, (post, index) => {
+        _.each( posts, ( post, index ) => {
           const previous = index === posts.length - 1 ? null : posts[index + 1].node;
           const next = index === 0 ? null : posts[index - 1].node;
           const path = ( post.node.frontmatter.path || post.node.fields.slug );
 
-          // if ( post.node.frontmatter.hasOwnProperty( 'path' ) ) {
-          //
-          // }
-
-          // console.log( post.node );
-          // console.log( path === '/' );
-          console.log( 'next: ', next );
-          console.log( 'previous: ', previous );
-
-          var pageData = {
+          createPage( {
             path: path,
             component: page,
             context: {
@@ -58,13 +49,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               previous: ( ( previous && ( previous.fields.slug === '/' ) ) || ( previous && previous.frontmatter.path === '/' ) ) ? undefined : previous,
               next: ( ( next && ( next.fields.slug === '/' ) ) || ( next && next.frontmatter.path === '/' ) ) ? undefined : next,
             },
-          };
-
-          createPage( pageData )
-        })
-      })
+          } );
+        } ); // _.each
+      } ) // .then
     )
-  })
+  } );
 }
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {

@@ -12,7 +12,7 @@ class PageTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next } = this.props.pathContext
 
-    console.log( this.props.pathContext );
+    // console.log( this.props.pathContext );
 
     return (
       <article>
