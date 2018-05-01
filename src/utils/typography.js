@@ -9,7 +9,7 @@ Lincoln.overrideThemeStyles = () => ({
 })
 
 // delete Wordpress2016.googleFonts
-delete Lincoln.googleFonts
+// delete Lincoln.googleFonts
 
 const typography = new Typography(Lincoln)
 
