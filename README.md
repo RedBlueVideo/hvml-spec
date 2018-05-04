@@ -30,4 +30,4 @@ Inspired by the article [“How The Television Will Be Revolutionized: The Excit
 
 ## Specification
 
-See the [Wiki](https://github.com/RedBlueVideo/hvml/wiki/The-Elements-of-HVML) (work-in-progress).
+See the [Wiki](https://github.com/RedBlueVideo/hvml-spec/wiki/The-Elements-of-HVML) (work-in-progress).
