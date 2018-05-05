@@ -1,39 +1,57 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
+import React from 'react';
+import Helmet from 'react-helmet';
+import Link from 'gatsby-link';
+import get from 'lodash/get';
 
 // import Intro from '../components/Intro'
-import { rhythm, scale } from '../utils/typography'
+import { rhythm, scale } from '../utils/typography';
+import { sortElementPages } from '../utils/sortElementPages';
 
 class PageTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const { previous, next } = this.props.pathContext
+    // const elementPages = this.props.data.elements.edges;
+    const elementPages = sortElementPages( this.props.data.elements.edges );
 
     // console.log( this.props.pathContext );
+    // console.log( 'this.props.data', this.props.data );
+    // console.log( 'elementPages', elementPages );
+    // console.log( 'post', post );
+
+    // https://stackoverflow.com/a/36620199/214325
+    // elementPages = sortElementPages( elementPages );
+
+    // console.log( 'elementPages after', elementPages );
 
     return (
       <article>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h1
           style={{
-            marginTop: rhythm(1),
-            marginBottom: rhythm(1.25),
+            marginTop: 0,
+            // marginBottom: rhythm(1.25),
           }}
         >{post.frontmatter.title}</h1>
-        <time
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </time>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <p>Last updated: <time dateTime={post.frontmatter.date}>{post.frontmatter.formattedDate}</time></p>
+        { ( post.fields.slug === '/elements/' ) &&
+          <ol>
+          { elementPages.map( ( { node } ) => {
+            const title = get( node, 'frontmatter.title' ) || node.fields.slug;
+            return (
+              <li key={ node.fields.slug }>
+                <Link to={ node.fields.slug }>
+                  { title }
+                </Link>
+              </li>
+            )
+          } ) }
+          </ol>
+        }
+        { ( post.fields.slug !== '/elements/' ) &&
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        }
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -85,9 +103,27 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        formattedDate: date(formatString: "MMMM DD, YYYY")
+        date: date
+      }
+    }
+    elements: allMarkdownRemark(filter: { fields: { slug: { regex: "/^\/elements\//i", ne: "/elements/" } } }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "DD MMMM, YYYY")
+            title
+          }
+        }
       }
     }
   }

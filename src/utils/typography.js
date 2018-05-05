@@ -5,7 +5,7 @@ import Lincoln from 'typography-theme-lincoln'
 Lincoln.overrideThemeStyles = () => ({
   'blockquote': {
     borderColor: 'rgba(0,0,0,0.125)',
-  },
+  }
 })
 
 // delete Wordpress2016.googleFonts

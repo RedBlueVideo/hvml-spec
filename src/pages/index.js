@@ -5,14 +5,18 @@ import Helmet from 'react-helmet'
 
 // import intro from '../components/intro'
 import { rhythm } from '../utils/typography'
+import { sortElementPages } from '../utils/sortElementPages.js'
 
 class PagesIndex extends React.Component {
   render() {
     const siteTitle = get( this, 'props.data.site.siteMetadata.title' );
-    const posts = get( this, 'props.data.feed.edges' );
+    let posts = get( this, 'props.data.feed.edges' );
     const intro = get( this, 'props.data.intro.edges[0].node' );
     const useCases = get( this, 'props.data.useCases.edges[0].node' );
     const cheatSheet = get( this, 'props.data.cheatSheet.edges[0].node' );
+
+    console.log( 'posts', posts );
+    posts = sortElementPages( posts );
 
     return (
       <article>

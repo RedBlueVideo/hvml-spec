@@ -20,7 +20,9 @@ class Template extends React.Component {
           marginBottom: rhythm(1.5),
           marginTop: 0,
         } }>
-          <h1>
+          <h1 style={ {
+            marginTop: 0
+          } }>
             <Link
               style={{
                 boxShadow: 'none',
@@ -33,7 +35,7 @@ class Template extends React.Component {
               HVML
             </Link>
           </h1>
-          <h2 style={ { ...rhythm( 0.5 ) } }>Hypervideo Markup Language</h2>
+          <h2 style={ { marginTop: rhythm(0) } }>Hypervideo Markup Language</h2>
         </hgroup>
       )
     } else {

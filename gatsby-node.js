@@ -2,6 +2,7 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const sortElementPagesNode = require( './src/utils/sortElementPages.node.js' ).sortElementPages
 
 exports.createPages = ( { graphql, boundActionCreators } ) => {
   const { createPage } = boundActionCreators
@@ -34,11 +35,11 @@ exports.createPages = ( { graphql, boundActionCreators } ) => {
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = sortElementPagesNode( result.data.allMarkdownRemark.edges );
 
         _.each( posts, ( post, index ) => {
-          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-          const next = index === 0 ? null : posts[index - 1].node;
+          const next = index === posts.length - 1 ? null : posts[index + 1].node;
+          const previous = index === 0 ? null : posts[index - 1].node;
           const path = ( post.node.frontmatter.path || post.node.fields.slug );
 
           createPage( {
@@ -47,7 +48,7 @@ exports.createPages = ( { graphql, boundActionCreators } ) => {
             context: {
               slug: path,
               previous: ( ( previous && ( previous.fields.slug === '/' ) ) || ( previous && previous.frontmatter.path === '/' ) ) ? undefined : previous,
-              next: ( ( next && ( next.fields.slug === '/' ) ) || ( next && next.frontmatter.path === '/' ) ) ? undefined : next,
+              next: ( ( next && ( next.fields.slug === '/' ) ) || ( next && next.frontmatter.path === '/' ) ) ? undefined : next
             },
           } );
         } ); // _.each
@@ -56,16 +57,19 @@ exports.createPages = ( { graphql, boundActionCreators } ) => {
   } );
 }
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
+exports.onCreateNode = ( { node, boundActionCreators, getNode } ) => {
   const { createNodeField } = boundActionCreators
 
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    // console.log(value)
-    createNodeField({
+  if ( node.internal.type === `MarkdownRemark` ) {
+    const value = createFilePath( { node, getNode } );
+
+    // console.log( 'node', node );
+    // console.log( 'value', value );
+
+    createNodeField( {
       name: `slug`,
       node,
       value,
-    })
+    } );
   }
 }
