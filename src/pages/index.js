@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 // import intro from '../components/intro'
 import { rhythm } from '../utils/typography'
-import { sortElementPages } from '../utils/sortElementPages.js'
+import { sortElementPages, groupElementPages } from '../utils/sortElementPages.js'
 
 class PagesIndex extends React.Component {
   render() {
@@ -15,8 +15,9 @@ class PagesIndex extends React.Component {
     const useCases = get( this, 'props.data.useCases.edges[0].node' );
     const cheatSheet = get( this, 'props.data.cheatSheet.edges[0].node' );
 
+    posts = groupElementPages( sortElementPages( posts ) );
+
     console.log( 'posts', posts );
-    posts = sortElementPages( posts );
 
     return (
       <article>
@@ -28,17 +29,48 @@ class PagesIndex extends React.Component {
         <section>
           <h2>Specification</h2>
           <ol>
-          { posts.map( ( { node } ) => {
-            const title = get( node, 'frontmatter.title' ) || node.fields.slug;
-            return (
-              <li key={ node.fields.slug }>
-                <Link to={ node.fields.slug }>
-                  { title }
-                </Link>
-              </li>
-            )
-          } ) }
+            { posts.root.map( ( post, index ) => {
+              let node = post.node;
+              let title = get( node, 'frontmatter.title' ) || node.fields.slug;
+              let key = node.fields.slug.replace( /^\/([^/]+)\//i, '$1' );
+
+              return (
+                <li key={ index }>
+                  <Link to={ node.fields.slug }>
+                    { title }
+                  </Link>
+                  { key &&
+                    <ol> {
+                      posts[key].map( ( { node } ) => {
+                        const title = get( node, 'frontmatter.title' ) || node.fields.slug;
+                        return (
+                          <li key={ node.fields.slug }>
+                            <Link to={ node.fields.slug }>
+                              { title }
+                            </Link>
+                          </li>
+                        )
+                      } )
+                    } </ol>
+                  }
+                </li>
+              );
+            } ) }
           </ol>
+          {/*
+            <ol> {
+              posts.map( ( { node } ) => {
+                const title = get( node, 'frontmatter.title' ) || node.fields.slug;
+                return (
+                  <li key={ node.fields.slug }>
+                    <Link to={ node.fields.slug }>
+                      { title }
+                    </Link>
+                  </li>
+                )
+              } ) // map
+            } </ol>
+          */}
         </section>
       </article>
     );
