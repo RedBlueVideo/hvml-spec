@@ -1,0 +1,3 @@
+[submodule "src/layouts/themes/dracula-prism"]
+	path = src/layouts/themes/dracula-prism
+	url = https://github.com/dracula/prism.git

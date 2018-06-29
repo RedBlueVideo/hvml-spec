@@ -3,6 +3,18 @@ import Link from 'gatsby-link'
 
 import { rhythm, scale } from '../utils/typography'
 
+import 'prismjs/themes/prism-solarizedlight.css'
+import './themes/prism-mods/solarizedlight.css'
+
+// import 'prism-themes/themes/prism-a11y-dark.css'
+// import './themes/dracula-prism/css/dracula-prism.css'
+
+// import 'prismjs/themes/prism-funky.css'
+// import './themes/prism-mods/funky.css'
+
+// import 'prism-themes/themes/prism-duotone-sea.css'
+// import './themes/prism-mods/duotone-sea.css'
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
