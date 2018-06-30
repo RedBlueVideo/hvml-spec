@@ -61,7 +61,7 @@ class HvmlIndex extends React.Component {
                       {/*<Link to={ node.fields.slug } */}
                       <h3>
                         <Link
-                          to="#${id}"
+                          to={ `#${id}` }
                           className="self-referential-link"
                           dangerouslySetInnerHTML={ { __html: expandCodeMarkdown( title ) } }
                         ></Link>
