@@ -3,7 +3,14 @@ title: The `title` Element
 date: "2018-06-30T00:07:48-05:00"
 ---
 
-The <b>canonical title</b> for a given video or other creative work.
+#### Contexts
+
+- As a child of `video`
+- As a child of `venue`
+
+#### Definition
+
+Represents the <b>canonical title</b> for a given video or other creative work.
 
 A <dfn>canonical title</dfn> [SHOULD](https://tools.ietf.org/html/rfc2119#section-3) be what the resource in question has been named by its author, without any additional information that might be present upon displaying it to a user.
 

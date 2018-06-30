@@ -6,6 +6,7 @@ import Helmet from 'react-helmet'
 // import intro from '../components/intro'
 import { rhythm } from '../utils/typography'
 import { sortElementPages, groupElementPages } from '../utils/sortElementPages.js'
+import expandCodeMarkdown from '../utils/expandCodeMarkdown'
 
 class PagesIndex extends React.Component {
   render() {
@@ -28,7 +29,8 @@ class PagesIndex extends React.Component {
         <section dangerouslySetInnerHTML={ { __html: cheatSheet.html } }></section>
         <section>
           <h2>Specification</h2>
-          <ol>
+          <ol start="0">
+            <li><a href="/hvml">Single-page version</a></li>
             { posts.root.map( ( post, index ) => {
               let node = post.node;
               let title = get( node, 'frontmatter.title' ) || node.fields.slug;
@@ -45,9 +47,7 @@ class PagesIndex extends React.Component {
                         const title = get( node, 'frontmatter.title' ) || node.fields.slug;
                         return (
                           <li key={ node.fields.slug }>
-                            <Link to={ node.fields.slug }>
-                              { title }
-                            </Link>
+                            <Link to={ node.fields.slug } dangerouslySetInnerHTML={ { __html: expandCodeMarkdown( title ) } }></Link>
                           </li>
                         )
                       } )

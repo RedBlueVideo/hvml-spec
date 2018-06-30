@@ -25,14 +25,11 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
-    if (location.pathname === rootPath) {
-      header = (
-        <hgroup style={ {
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        } }>
+    let headerContents = ( size ) => {
+      return (
+        <React.Fragment>
           <h1 style={ {
+            fontSize: ( size === 'small' ? rhythm(0.9) : undefined ),
             marginTop: 0
           } }>
             <Link
@@ -47,39 +44,31 @@ class Template extends React.Component {
               HVML
             </Link>
           </h1>
-          <h2 style={ { marginTop: rhythm(0) } }>Hypervideo Markup Language</h2>
-        </hgroup>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            // fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(1),
-            // fontWeight: 'bold'
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-              backgroundImage: 'none'
-            }}
-            to={'/'}
-          >
-            HVML
-          </Link>
-        </h3>
+          <h2 style={ {
+            fontSize: ( size === 'small' ? rhythm(0.7) : undefined ),
+            marginTop: rhythm(0)
+          } }>Hypervideo Markup Language</h2>
+        </React.Fragment>
       )
     }
+
+    header = (
+      <hgroup style={ {
+        ...scale(1.5),
+        marginBottom: rhythm(1.5),
+        marginTop: 0,
+      } }>
+        { ( location.pathname === rootPath ) ? headerContents() : headerContents( 'small' ) }
+      </hgroup>
+    )
+
     return (
       <div
         style={{
           marginLeft: 'auto',
           marginRight: 'auto',
-          maxWidth: rhythm(24),
+          // maxWidth: rhythm(24.68355),
+          maxWidth: '39rem',
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >

@@ -1,20 +1,22 @@
 ---
 title: The `hvml` Element
-date: "2017-08-14T10:28:55Z"
+date: "2018-06-30T03:14:58-05:00"
 ---
 
-This is the root node. Limit one per document. Required.
-
-### Contexts
+#### Contexts
 
 - Documents
 
-### Content Attributes
+#### Content Attributes
 
 - XML Root Node Attributes (e.g. `xmlns`)
 - XML Global Attributes (e.g. `xml:id`)
 
-### Examples
+#### Definition
+
+This is the root node. Limit one per document. Required.
+
+#### Examples
 
 1. A barebones configuration.
 

@@ -1,17 +1,15 @@
 ---
 title: The `group` Element
-date: "2017-08-14T10:28:55Z"
+date: "2018-06-30T03:20:03-05:00"
 ---
 
-An arbitrary grouping.
-
-### Contexts
+#### Contexts
 
 - As a child of `hvml`
 - As a child of `group`
 - As a child of `glossary`
 
-### Content Attributes
+#### Content Attributes
 
 - XML Global Attributes (e.g. `xml:id`)
 - `type`
@@ -20,7 +18,11 @@ An arbitrary grouping.
       - As a child of `hvml` or `group`: `series`
       - As a child of `glossary`: `profanity | nudity | sex | violence | drugs | scale`
 
-### Examples
+#### Definition
+
+An arbitrary grouping.
+
+#### Examples
 
 1. As a child of `hvml`: Denoting an episodic television show.
 
