@@ -7,7 +7,7 @@ The <b>canonical title</b> for a given video or other creative work.
 
 A <dfn>canonical title</dfn> [SHOULD](https://tools.ietf.org/html/rfc2119#section-3) be what the resource in question has been named by its author, without any additional information that might be present upon displaying it to a user.
 
-For example, a video appearing in the search results of a video portal site might have the <b>presentational title</b> “Last Day of Summer ’16 | Hugh’s Vlog”. The <b>canonical title</b> would be “Last Day of Summer ’16”. The text after the spacer “ | ” denotes the name of the series in question, and should not be included in an episode’s `<title>`, as it can usually be inferred from the context of the larger document, if authored correctly. To illustrate:
+For example, a video appearing in the search results of a video portal site might have the <b>presentational title</b> “Last Day of Summer ’16 | Hugh’s Vlog”. The <b>canonical title</b> would be “Last Day of Summer ’16”. The text after the spacer “ | ” denotes the name of the series, and should not be included in an episode’s `<title>`, as it can usually be inferred from the context of the larger document, if authored correctly. To illustrate:
 
 ```xml
 <hvml xmlns="http://vocab.nospoon.tv/ovml#" xml:lang="en">
