@@ -33,5 +33,5 @@ This is the root node. Limit one per document. Required.
    **Note:** This is the recommended minimum configuration (with document language set appropriately).
 
    ```xml
-   <hvml xmlns="http://vocab.nospoon.tv/ovml#" xml:lang="fr"></hvml>
+   <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="fr"></hvml>
    ```
