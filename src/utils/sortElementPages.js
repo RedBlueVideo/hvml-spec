@@ -5,6 +5,7 @@ const elementOrder = [
 	'hvml',
 	'title',
 	'video',
+	'series',
 	'group',
 ];
 

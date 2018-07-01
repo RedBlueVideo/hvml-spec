@@ -31,7 +31,7 @@ An arbitrary grouping.
      <!-- … -->
    </group>
    ```
-2. As a child of `group`: Denoting a distinct “season” or “series” of an episodic television show.
+2. As a child of `group`: Denoting a distinct “season” or “series” of an episodic television show:
 
    ```xml
    <group xml:id="hughs-vlog" type="series">
@@ -40,6 +40,15 @@ An arbitrary grouping.
      </group>
    </group>
    ```
+2. As a child of `group`: Denoting an arbitrary group of episodes.
+
+  ```xml
+  <group xml:id="hughs-vlog" type="series">
+    <group xml:id="best-of-hughs-vlog">
+      <!-- … -->
+    </group>
+  </group>
+  ```
 3. As a child of `glossary`: Defining a group of content rating classifications.
 
    ```xml
