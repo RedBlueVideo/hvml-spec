@@ -29,7 +29,7 @@ date: "2018-07-01T03:39:16-05:00"
 - As a child of `hvml`: Denotes an episodic story, such as a [Web] television show, miniseries, or theatrical anthology.
 - As a child of another `series`: Denotes a distinct arc of an episodic story, such as a “season” (<abbr>US</abbr> parlance) or “series” (<abbr>UK</abbr> parlance). Throughout this specification, the term “season” will be used for this use case to avoid ambiguity.
 
-`series` is for grouping works that canonically relate to one another, as set forth by their author(s). It is not appropriate for marking up independent curation, i.e. putting together an array of standalone works. For that, see [`group`](/hvml#group) [[standalone](/elements/group)].
+`series` is for grouping works that canonically relate to one another, as set forth by their author(s). It is not appropriate for marking up independent curation, i.e. putting together an array of standalone works. For that, see <a title="single-page" href="/hvml#group"><code>group</code></a> [<a class="alt-link" href="/elements/group">standalone</a>]
 
 #### Examples
 

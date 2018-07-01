@@ -56,6 +56,9 @@ Lincoln.overrideThemeStyles = () => ({
   },
   'abbr:not([title])': {
     borderBottom: 'none'
+  },
+  '.alt-link': {
+    fontSize: '0.9em'
   }
 })
 
