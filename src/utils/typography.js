@@ -11,8 +11,8 @@ Lincoln.overrideThemeStyles = () => ({
   // },
   'h4,h5,h6': {
     fontWeight: 'bold',
-    fontSize: '1rem',
-    marginTop: '1.5rem'
+    fontSize: '1.25rem',
+    marginTop: '2rem'
   },
   'article + article': {
     marginTop: '4.5rem'
@@ -23,18 +23,39 @@ Lincoln.overrideThemeStyles = () => ({
     backgroundImage: 'none',
     color: 'inherit'
   },
-  'dl.inline dt': {
-    display: 'inline',
-    marginRight: '.25rem'
-    // fontWeight: 'bold'
+  // https://stackoverflow.com/a/21261303/214325
+  'dl.inline-flex': {
+    display: 'flex',
+    flexFlow: 'row',
+    flexWrap: 'wrap',
+    width: '100%', /* set the container width*/
+    overflow: 'visible'
   },
-  'dl.inline dd': {
-    margin: '0px',
-    display: 'inline'
+  'dl.inline-flex dt': {
+    flex: '0 0 25%',
+    textOverflow: 'ellipsis',
+    overflow: 'hidden',
+    // marginBottom: '1rem'
   },
-  'dl.inline dd:after': {
-    content: "\A",
-    whiteSpace: 'pre'
+  'dl.inline-flex dd': {
+    flex: '0 0 75%',
+    marginLeft: 'auto',
+    textAlign: 'left',
+    textOverflow: 'ellipsis',
+    overflow: 'hidden',
+    marginBottom: '0.75rem',
+    // marginTop: '-0.5rem'
+  },
+  'dfn': {
+    fontStyle: 'normal',
+    fontWeight: 'bold'
+  },
+  'dfn[title]': {
+    borderBottom: '1px dotted black',
+    cursor: 'help'
+  },
+  'abbr:not([title])': {
+    borderBottom: 'none'
   }
 })
 

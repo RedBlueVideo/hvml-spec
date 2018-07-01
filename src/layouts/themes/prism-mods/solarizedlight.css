@@ -13,3 +13,7 @@ a > code[class*="language-"] {
   /* font-size: inherit; */
 	font-size: 0.8em;
 }
+
+pre[class*="language-"] {
+  margin: 1.25rem 0
+}
