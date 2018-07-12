@@ -6,6 +6,9 @@ const elementOrder = [
 	'video',
 	'series',
 	'group',
+	'scale',
+	'maturity',
+	'verdict'
 ];
 
 exports.elementOrder = elementOrder;

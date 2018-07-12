@@ -7,6 +7,9 @@ const elementOrder = [
 	'video',
 	'series',
 	'group',
+	'scale',
+	'maturity',
+	'verdict'
 ];
 
 const sortElementPages = function sortElementPages( elementPages ) {

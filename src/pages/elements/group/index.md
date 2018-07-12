@@ -1,13 +1,12 @@
 ---
 title: The `group` Element
-date: "2018-06-30T03:20:03-05:00"
+date: "2018-07-12T02:53:57-05:00"
 ---
 
 #### Contexts
 
 - As a child of `series`
 - As a child of `group`
-- As a child of `glossary`
 
 #### Content Attributes
 
@@ -19,12 +18,6 @@ date: "2018-06-30T03:20:03-05:00"
     <dt>Type:</dt>
     <dd><code class="language-text">xs:string</code></dd>
     <dt>Values:</dt>
-    <dd><code class="language-text">profanity</code></dd>
-    <dd><code class="language-text">nudity</code></dd>
-    <dd><code class="language-text">sex</code></dd>
-    <dd><code class="language-text">violence</code></dd>
-    <dd><code class="language-text">drugs</code></dd>
-    <dd><code class="language-text">scale</code></dd>
     <dd><code class="language-text">curation</code></dd>
   </dl>
 <!--
@@ -87,43 +80,5 @@ An arbitrary grouping.
          <video xml:id="best-of-03" xlink:href="#episode-05"></video>
        </group>
      </series>
-   </hvml>
-   ```
-
-3. Defining a group of content rating classifications.
-
-   ```xml
-   <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
-     <glossary xml:id="yt" for="ratings">
-       <title>YouTube Shows &amp; Movies</title>
-       <scheme>http://support.google.com/youtube/bin/answer.py?hl=en&amp;answer=146399</scheme>
-       <group type="profanity">
-         <rating code="L-" maturity="0" color="green">
-           <title>No strong language</title>
-         </rating>
-         <!-- … -->
-         <rating code="L+" maturity="1" color="red">
-           <title>Explicit language</title>
-         </rating>
-       </group>
-     </glossary>
-   </hvml>
-   ```
-4. Defining a group of content ranking classifications.
-
-   ```xml
-   <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
-     <glossary xml:id="nstv" for="score" party="1st">
-       <title>No Spoon TV Verdicts</title>
-       <group type="scale">
-         <score xml:id="nstv-u" code="U" rank="0">
-           <title>Unwatchable</title>
-         </score>
-         <!-- … -->
-         <score xml:id="nstv-ma" code="Ma" rank="1">
-           <title>Masterpiece</title>
-         </score>
-       </group>
-     </glossary>
    </hvml>
    ```
