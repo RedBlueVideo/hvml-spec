@@ -1,6 +1,6 @@
 ---
 title: The `series` Element
-date: "2018-07-01T03:39:16-05:00"
+date: "2018-07-12T04:12:12-05:00"
 ---
 
 #### Contexts
@@ -85,15 +85,15 @@ date: "2018-07-01T03:39:16-05:00"
 
 A `series`’ children [SHOULD](https://tools.ietf.org/html/rfc2119#section-3) be ordered chronologically, so that simply retrieving a list of them would not require additional computation to sort in the majority of use cases. This is referred to as <dfn>pre-ordering</dfn> on behalf of the document author.
 
-If an `order` attribute is present and set to the exact string `ascending`, then the `series`’ children [MUST](https://tools.ietf.org/html/rfc2119#section-1) be understood as pre-ordered from the earliest date of publication to the latest date of publication.
+If the `order` attribute is present and set to the exact string `ascending`, then the `series`’ children [MUST](https://tools.ietf.org/html/rfc2119#section-1) be understood as pre-ordered from the earliest date of publication to the latest date of publication.
 
-If an `order` attribute is present and set to the exact string `descending`, then the `series`’ children [MUST](https://tools.ietf.org/html/rfc2119#section-1) be understood as pre-ordered from the latest date of publication to the earliest date of publication.
+If the `order` attribute is present and set to the exact string `descending`, then the `series`’ children [MUST](https://tools.ietf.org/html/rfc2119#section-1) be understood as pre-ordered from the latest date of publication to the earliest date of publication.
 
-If an `order` attribute is present and set to the exact string `custom`, then the `series`’ children [SHOULD NOT](https://tools.ietf.org/html/rfc2119#section-4) be understood as pre-ordered in a consistently linear fashion. User-agents wanting to sort a `series`’ children by date anyway in this case should look for grandchild `published` elements. If a given child has no `published` child, its place in a sort is left to the User-agent.
+If the `order` attribute is present and set to the exact string `custom`, then the `series`’ children [SHOULD NOT](https://tools.ietf.org/html/rfc2119#section-4) be understood as pre-ordered in a consistently linear fashion. User-agents wanting to sort a `series`’ children by date anyway in this case should look for grandchild `published` elements. If a given child has no `published` child, its place in a sort is left to the User-agent.
 
-If an `order` attribute is present but set to a <dfn title="Any sequence of characters excluding NULL, the empty string, and pure whitespace">non-empty string</dfn> that the User-agent doesn’t recognize, the pre-order defaults to `custom` to gracefully degrade in the event of future permissible values.
+If the `order` attribute is present but set to a <dfn title="Any sequence of characters excluding NULL, the empty string, and pure whitespace">non-empty string</dfn> that the User-agent doesn’t recognize, the pre-order defaults to `custom` to gracefully degrade in the event of future permissible values.
 
-If no `order` attribute is present, or is present but <dfn title="any of NULL, the empty string, or pure whitespace">empty</dfn>, the pre-order defaults to `ascending`.
+If the `order` attribute is not present, or is present but <dfn title="any of NULL, the empty string, or pure whitespace">empty</dfn>, the pre-order defaults to `ascending`.
 <!--
 #### Rationale For
 
