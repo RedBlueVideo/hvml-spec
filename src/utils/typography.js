@@ -59,6 +59,12 @@ Lincoln.overrideThemeStyles = () => ({
   },
   '.alt-link': {
     fontSize: '0.9em'
+  },
+  'details': {
+    'cursor': 'default'
+  },
+  'details dl': {
+    'cursor': 'initial'
   }
 })
 
