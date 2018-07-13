@@ -1,6 +1,7 @@
 ---
 title: Glossary of Terms
-date: ""
+path: /glossary/
+date: "2018-07-13T01:35:12-05:00"
 ---
 
 <dl>

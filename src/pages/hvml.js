@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 // import intro from '../components/intro'
 import { rhythm } from '../utils/typography'
-import { sortElementPages, groupElementPages } from '../utils/sortElementPages.js'
+import { sortElementPages, sortRootPages, groupElementPages } from '../utils/sortPages.js'
 import expandCodeMarkdown from '../utils/expandCodeMarkdown'
 
 class HvmlIndex extends React.Component {
@@ -13,7 +13,7 @@ class HvmlIndex extends React.Component {
     const siteTitle = get( this, 'props.data.site.siteMetadata.title' );
     let posts = get( this, 'props.data.feed.edges' );
     posts = groupElementPages( sortElementPages( posts ) );
-    // console.log( 'posts', posts );
+    posts.root = sortRootPages( posts.root );
     let lastUpdate = get( this, 'props.data.feed.edges' ).map( ( { node } ) => {
       return node.frontmatter;
     } ).shift();
@@ -52,7 +52,7 @@ class HvmlIndex extends React.Component {
                 </div>
               </header>
               {
-                posts[key].map( ( { node } ) => {
+                posts[key] && posts[key].map( ( { node } ) => {
                   const localNameRegExp = new RegExp( `/${key}/([^/]+)/`, 'i' );
                   const id = node.fields.slug.replace( localNameRegExp, '$1' );
                   const title = get( node, 'frontmatter.title' ) || node.fields.slug;
@@ -72,6 +72,9 @@ class HvmlIndex extends React.Component {
                   )
                 } )
               }
+              {
+                !posts[key] && <div dangerouslySetInnerHTML={ { __html: node.html } }></div>
+              }
             </section>
           );
         } ) }
@@ -89,7 +92,19 @@ export const pageQuery = graphql`
         title
       }
     }
-    feed: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { frontmatter: { path: { ne: "/" } } }) {
+    feed: allMarkdownRemark(
+      sort: {
+        fields: [frontmatter___date],
+        order: DESC
+      },
+      filter: {
+        frontmatter: {
+          path: {
+            ne: "/"
+          }
+        }
+      }
+    ) {
       edges {
         node {
           html

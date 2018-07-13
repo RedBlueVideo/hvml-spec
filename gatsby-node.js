@@ -2,7 +2,9 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
-const sortElementPagesNode = require( './src/utils/sortElementPages.node.js' ).sortElementPages
+// const sortElementPagesNode = require( './src/utils/sortPages.node.js' ).sortElementPages
+// const sortRootPagesNode = require( './src/utils/sortPages.node.js' ).sortRootPages
+const sortPages = require( './src/utils/sortPages.node.js' ).sortPages
 
 exports.createPages = ( { graphql, boundActionCreators } ) => {
   const { createPage } = boundActionCreators
@@ -35,9 +37,16 @@ exports.createPages = ( { graphql, boundActionCreators } ) => {
         }
 
         // Create blog posts pages.
-        const posts = sortElementPagesNode( result.data.allMarkdownRemark.edges );
+        // const posts = sortRootPagesNode( sortElementPagesNode( result.data.allMarkdownRemark.edges ) );
+        // posts.root = sortRootPagesNode( posts.root );
+        // console.log( 'posts.root', posts.root );
+        const posts = sortPages( result.data.allMarkdownRemark.edges );
+
+        // console.log( 'posts', posts );
 
         _.each( posts, ( post, index ) => {
+          console.log( 'post', post );
+
           const next = index === posts.length - 1 ? null : posts[index + 1].node;
           const previous = index === 0 ? null : posts[index - 1].node;
           const path = ( post.node.frontmatter.path || post.node.fields.slug );

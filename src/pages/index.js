@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 
 // import intro from '../components/intro'
 import { rhythm } from '../utils/typography'
-import { sortElementPages, groupElementPages } from '../utils/sortElementPages.js'
+import { sortElementPages, sortRootPages, groupElementPages } from '../utils/sortPages.js'
 import expandCodeMarkdown from '../utils/expandCodeMarkdown'
 
 class PagesIndex extends React.Component {
@@ -17,8 +17,7 @@ class PagesIndex extends React.Component {
     const cheatSheet = get( this, 'props.data.cheatSheet.edges[0].node' );
 
     posts = groupElementPages( sortElementPages( posts ) );
-
-    console.log( 'posts', posts );
+    posts.root = sortRootPages( posts.root );
 
     return (
       <article>
@@ -41,7 +40,7 @@ class PagesIndex extends React.Component {
                   <Link to={ node.fields.slug }>
                     { title }
                   </Link>
-                  { key &&
+                  { posts[key] &&
                     <ol> {
                       posts[key].map( ( { node } ) => {
                         const title = get( node, 'frontmatter.title' ) || node.fields.slug;
@@ -128,7 +127,19 @@ export const pageQuery = graphql`
         }
       }
     }
-    feed: allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { frontmatter: { path: { ne: "/" } } }) {
+    feed: allMarkdownRemark(
+      sort: {
+        fields: [frontmatter___date],
+        order: DESC
+      },
+      filter: {
+        frontmatter: {
+          path: {
+            ne: "/"
+          }
+        }
+      }
+    ) {
       edges {
         node {
           excerpt
@@ -140,6 +151,18 @@ export const pageQuery = graphql`
             title
           }
         }
+      }
+    }
+    glossary: markdownRemark(fields: { slug: { eq: "/glossary/" } }) {
+      id
+      html
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+        formattedDate: date(formatString: "MMMM Do, YYYY")
+        date: date
       }
     }
   }

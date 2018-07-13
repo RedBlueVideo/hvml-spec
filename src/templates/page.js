@@ -5,7 +5,7 @@ import get from 'lodash/get';
 
 // import Intro from '../components/Intro'
 import { rhythm, scale } from '../utils/typography';
-import { sortElementPages } from '../utils/sortElementPages';
+import { sortElementPages } from '../utils/sortPages';
 import expandCodeMarkdown from '../utils/expandCodeMarkdown'
 
 class PageTemplate extends React.Component {
@@ -14,11 +14,16 @@ class PageTemplate extends React.Component {
     const siteTitle = get( this.props, 'data.site.siteMetadata.title' )
     const { previous, next } = this.props.pathContext
     // const elementPages = this.props.data.elements.edges;
+
+    console.log( 'this.props.data', this.props.data );
+
     const elementPages = sortElementPages( this.props.data.elements.edges );
     let lastUpdate = get( this, 'props.data.elements.edges' ).map( ( { node } ) => {
       return node.frontmatter;
     } ).shift();
     // console.log( 'lastUpdate', lastUpdate );
+
+    console.log( 'this.props.data.markdownRemark', this.props.data.markdownRemark );
 
     return (
       <article>
@@ -110,8 +115,10 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC },
       filter: {
         fields: {
-          slug: { regex: "/^\/elements\//i",
-          ne: "/elements/" }
+          slug: {
+            regex: "/^\/elements\//i",
+            ne: "/elements/"
+          }
         }
       }
     ) {
@@ -127,6 +134,18 @@ export const pageQuery = graphql`
             date: date
           }
         }
+      }
+    }
+    glossary: markdownRemark(fields: { slug: { eq: "/glossary/" } }) {
+      id
+      html
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+        formattedDate: date(formatString: "MMMM Do, YYYY")
+        date: date
       }
     }
   }

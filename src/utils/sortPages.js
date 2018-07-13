@@ -1,4 +1,11 @@
-const sortBy = require('lodash/sortBy');
+import sortBy from 'lodash/sortBy';
+import groupBy from 'lodash/groupBy';
+
+const rootOrder = [
+	'rationale',
+	'elements',
+	'glossary'
+];
 
 const elementOrder = [
 	'hvml',
@@ -7,26 +14,26 @@ const elementOrder = [
 	'series',
 	'group',
 	'scale',
+	'rating',
 	'maturity',
-	'verdict'
+	'verdict',
 ];
 
-exports.elementOrder = elementOrder;
+// @todo
+// const sortPages = function sortPages( pageType, pages ) {};
 
 const sortElementPages = function sortElementPages( elementPages ) {
 	let sorted = sortBy( elementPages, ( { node } ) => {
 		let bareSlug = node.fields.slug.replace( /^\/elements\/([^/]+)\//i, '$1' );
 		let index = elementOrder.indexOf( bareSlug );
 
-		// console.log( `${bareSlug}: ${index}` );
+		console.log( `${bareSlug}: ${index}` );
 
 		return index;
 	} );
 
 	return sorted;
 };
-
-exports.sortElementPages = sortElementPages;
 
 const groupElementPages = function groupElementPages( elementPages ) {
 	let grouped = groupBy( elementPages, ( { node } ) => {
@@ -46,4 +53,17 @@ const groupElementPages = function groupElementPages( elementPages ) {
 	return grouped;
 };
 
-exports.groupElementPages = groupElementPages;
+const sortRootPages = function sortRootPages( rootPages ) {
+	let sorted = sortBy( rootPages, ( { node } ) => {
+		let bareSlug = node.fields.slug.replace( /^\/([^/]+)\//i, '$1' );
+		let index = rootOrder.indexOf( bareSlug );
+
+		console.log( `${bareSlug}: ${index}` );
+
+		return index;
+	} );
+
+	return sorted;
+};
+
+export default { elementOrder, sortElementPages, sortRootPages, groupElementPages };
