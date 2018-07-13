@@ -39,7 +39,7 @@ A predefined scale with which a piece of content can be rated or ranked.
      <glossary xml:id="yt" for="ratings">
        <title>YouTube Shows &amp; Movies</title>
        <scheme>http://support.google.com/youtube/bin/answer.py?hl=en&amp;answer=146399</scheme>
-       <scale type="profanity">
+       <maturity type="profanity">
          <maturity code="L-" rank="0" color="green">
            <title>No strong language</title>
          </maturity>
@@ -47,7 +47,7 @@ A predefined scale with which a piece of content can be rated or ranked.
          <maturity code="L+" rank="1" color="red">
            <title>Explicit language</title>
          </maturity>
-       </scale>
+       </maturity>
      </glossary>
    </hvml>
    ```
@@ -56,15 +56,13 @@ A predefined scale with which a piece of content can be rated or ranked.
   <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
     <glossary xml:id="nstv" for="score" party="1st">
       <title>No Spoon TV Verdicts</title>
-      <scale type="verdicts">
-        <verdict xml:id="nstv-u" code="U" rank="0">
-          <title>Unwatchable</title>
-        </verdict>
-        <!-- … -->
-        <verdict xml:id="nstv-ma" code="Ma" rank="1">
-          <title>Masterpiece</title>
-        </verdict>
-      </scale>
+      <verdict xml:id="nstv-u" code="U" rank="0">
+        <title>Unwatchable</title>
+      </verdict>
+      <!-- … -->
+      <verdict xml:id="nstv-ma" code="Ma" rank="1">
+        <title>Masterpiece</title>
+      </verdict>
     </glossary>
   </hvml>
   ```
