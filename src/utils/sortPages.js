@@ -27,7 +27,7 @@ const sortElementPages = function sortElementPages( elementPages ) {
 		let bareSlug = node.fields.slug.replace( /^\/elements\/([^/]+)\//i, '$1' );
 		let index = elementOrder.indexOf( bareSlug );
 
-		console.log( `${bareSlug}: ${index}` );
+		// console.log( `${bareSlug}: ${index}` );
 
 		return index;
 	} );
@@ -37,7 +37,7 @@ const sortElementPages = function sortElementPages( elementPages ) {
 
 const groupElementPages = function groupElementPages( elementPages ) {
 	let grouped = groupBy( elementPages, ( { node } ) => {
-		console.log( 'node.fields.slug', node.fields.slug );
+		// console.log( 'node.fields.slug', node.fields.slug );
 
 		let matches = node.fields.slug.match( /^\/([^/]+)\/[^/]+\//i );
 
@@ -58,7 +58,7 @@ const sortRootPages = function sortRootPages( rootPages ) {
 		let bareSlug = node.fields.slug.replace( /^\/([^/]+)\//i, '$1' );
 		let index = rootOrder.indexOf( bareSlug );
 
-		console.log( `${bareSlug}: ${index}` );
+		// console.log( `${bareSlug}: ${index}` );
 
 		return index;
 	} );

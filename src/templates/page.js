@@ -15,7 +15,7 @@ class PageTemplate extends React.Component {
     const { previous, next } = this.props.pathContext
     // const elementPages = this.props.data.elements.edges;
 
-    console.log( 'this.props.data', this.props.data );
+    // console.log( 'this.props.data', this.props.data );
 
     const elementPages = sortElementPages( this.props.data.elements.edges );
     let lastUpdate = get( this, 'props.data.elements.edges' ).map( ( { node } ) => {
@@ -23,7 +23,7 @@ class PageTemplate extends React.Component {
     } ).shift();
     // console.log( 'lastUpdate', lastUpdate );
 
-    console.log( 'this.props.data.markdownRemark', this.props.data.markdownRemark );
+    // console.log( 'this.props.data.markdownRemark', this.props.data.markdownRemark );
 
     return (
       <article>

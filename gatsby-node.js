@@ -45,7 +45,7 @@ exports.createPages = ( { graphql, boundActionCreators } ) => {
         // console.log( 'posts', posts );
 
         _.each( posts, ( post, index ) => {
-          console.log( 'post', post );
+          // console.log( 'post', post );
 
           const next = index === posts.length - 1 ? null : posts[index + 1].node;
           const previous = index === 0 ? null : posts[index - 1].node;

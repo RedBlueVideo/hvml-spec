@@ -76,7 +76,7 @@ const sortRootPages = function sortRootPages( rootPages ) {
 		let bareSlug = node.fields.slug.replace( /^\/([^/]+)\//i, '$1' );
 		let index = rootOrder.indexOf( bareSlug );
 
-		console.log( `${bareSlug}: ${index}` );
+		// console.log( `${bareSlug}: ${index}` );
 
 		return index;
 	} );
@@ -91,7 +91,7 @@ const sortPages = function sortPages( pages ) {
 		let slug = node.fields.slug//.replace( /^\/([^/]+)\//i, '$1' );
 		let index = pageOrder.indexOf( slug );
 
-		console.log( `${slug}: ${index}` );
+		// console.log( `${slug}: ${index}` );
 
 		return index;
 	} );
