@@ -1,12 +1,12 @@
 ---
-title: The `ranking` Element
-date: "2018-07-12T03:13:27-05:00"
+title: The `verdict` Element
+date: "2018-07-19T16:54:49-05:00"
 ---
 
 #### Contexts
 
 - As a child of `glossary`
-- As a child of `scale`
+- As a child of `group`
 
 #### Content Attributes
 
@@ -39,15 +39,15 @@ A predefined verdict with which a reviewer can rank a piece of content.
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <glossary xml:id="nstv" for="score" party="1st">
        <title>No Spoon TV Verdicts</title>
-       <scale type="review">
-         <ranking xml:id="nstv-u" code="U" rank="0">
+       <group>
+         <verdict xml:id="nstv-u" code="U" rank="0">
            <title>Unwatchable</title>
-         </ranking>
+         </verdict>
          <!-- … -->
-         <ranking xml:id="nstv-ma" code="Ma" rank="1">
+         <verdict xml:id="nstv-ma" code="Ma" rank="1">
            <title>Masterpiece</title>
-         </ranking>
-       </scale>
+         </verdict>
+       </group>
      </glossary>
    </hvml>
    ```
