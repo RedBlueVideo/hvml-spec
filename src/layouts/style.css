@@ -33,3 +33,7 @@
 footer > p {
   margin-bottom: 0;
 }
+
+abbr:not([title]) {
+  cursor: inherit;
+}
