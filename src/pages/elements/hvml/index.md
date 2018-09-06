@@ -20,7 +20,7 @@ This is the root node. Limit one per document. Required.
 
 1. A barebones configuration.
 
-   **Note:** Although this is conforming, this does not provide much context for the document’s contents, and is not recommended in most cases.
+   **Note:** Although an attribute-less root element is conforming, this does not provide much context for the document’s contents, and is not recommended in most cases.
 
    ```xml
    <hvml></hvml>
