@@ -1,0 +1,31 @@
+.branding {
+  text-align: center;
+}
+
+.branding__name {
+  margin: 0 auto;
+}
+
+.homepage-link {
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+@media only screen and (min-width: 540px) {
+  .branding {
+    text-align: left;
+  }
+
+  .homepage-link, .branding__name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .branding__name {
+    margin: 0 auto 0 1.25rem;
+  }
+
+  .homepage-link {
+    margin-bottom: 0;
+  }
+}

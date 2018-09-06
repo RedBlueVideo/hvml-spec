@@ -5,6 +5,7 @@ import { rhythm, scale } from '../utils/typography'
 
 import 'prismjs/themes/prism-solarizedlight.css'
 import './themes/prism-mods/solarizedlight.css'
+import './style.css'
 
 // import 'prism-themes/themes/prism-a11y-dark.css'
 // import './themes/dracula-prism/css/dracula-prism.css'
@@ -46,14 +47,14 @@ class Template extends React.Component {
     }
 
     let logo = (
-      <img src={ logo1x } width={ ( location.pathname === rootPath ) ? 152 : 114 } height={ ( location.pathname === rootPath ) ? 152 : 114 } srcSet={ `${logo1x} 1x, ${logo2x} 2x, ${logo3x} 3x` } style={ {
+      <img className="branding__logo" src={ logo1x } width={ ( location.pathname === rootPath ) ? 152 : 114 } height={ ( location.pathname === rootPath ) ? 152 : 114 } srcSet={ `${logo1x} 1x, ${logo2x} 2x, ${logo3x} 3x` } style={ {
         borderRadius: '101px',
         margin: '0 auto'
       } } />
     )
 
     let header = (
-      <hgroup style={ {
+      <hgroup className="branding__name" style={ {
         ...scale(1.5),
         marginTop: '-13px'
       } }>
@@ -71,37 +72,11 @@ class Template extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header style={ {
+        <header className="branding" style={ {
           marginBottom: rhythm(1.5)
         } }>
-          <style scoped>{`
-            header {
-              text-align: center;
-            }
-            hgroup {
-              margin: 0 auto;
-            }
-            a {
-              margin-bottom: 1.5rem;
-              display: block;
-            }
-            @media only screen and (min-width: 540px) {
-              header {
-                text-align: left;
-              }
-              a, hgroup {
-                display: inline-block;
-                vertical-align: middle;
-              }
-              hgroup {
-                margin: 0 auto 0 1.25rem;
-              }
-              a {
-                margin-bottom: 0;
-              }
-            }
-          `}</style>
           <Link
+            className="homepage-link"
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
