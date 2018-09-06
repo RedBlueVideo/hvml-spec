@@ -36,9 +36,12 @@ code[class*="language-"].language-text,
 }
 
 .token.comment,
-.token.doctype,
-.token.namespace {
+.token.doctype {
   opacity: .8;
+}
+
+.token.namespace {
+  opacity: inherit;
 }
 
 .token.selector,
