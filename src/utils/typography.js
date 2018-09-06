@@ -2,7 +2,32 @@ import Typography from 'typography'
 // import Wordpress2016 from 'typography-theme-wordpress-2016'
 import Lincoln from 'typography-theme-lincoln'
 
+const bodyBgColor = 'hsl(0, 0%, 95%)';
+// export { bodyBgColor }
+
 Lincoln.overrideThemeStyles = () => ({
+  body: {
+    backgroundColor: bodyBgColor
+  },
+  a: {
+    // color: linkColor,
+    // textDecoration: 'none',
+    textShadow: [
+      `.03em 0 ${bodyBgColor}`,
+      `-.03em 0 ${bodyBgColor}`,
+      `0 .03em ${bodyBgColor}`,
+      `0 -.03em ${bodyBgColor}`,
+      `.06em 0 ${bodyBgColor}`,
+      `-.06em 0 ${bodyBgColor}`,
+      `.09em 0 ${bodyBgColor}`,
+      `-.09em 0 ${bodyBgColor}`,
+      `.12em 0 ${bodyBgColor}`,
+      `-.12em 0 ${bodyBgColor}`,
+      `.15em 0 ${bodyBgColor}`,
+      `-.15em 0 ${bodyBgColor}`
+    ].join( ',' )
+    // backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, ${linkColor} 1px, ${linkColor} 2px, rgba(0, 0, 0, 0) 2px)`, // eslint-disable-line
+  },
   'blockquote': {
     borderColor: 'rgba(0,0,0,0.125)',
   },
