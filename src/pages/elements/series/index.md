@@ -36,6 +36,7 @@ date: "2018-07-12T04:12:12-05:00"
 1. Marking up a show with three episodes.
 
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <series xml:id="hughs-vlog">
        <title>Hugh’s Vlog</title>
@@ -50,6 +51,7 @@ date: "2018-07-12T04:12:12-05:00"
  2. Marking up a show with three episodes, in reverse chronological order.
 
     ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
     <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
       <series xml:id="hughs-vlog" order="descending">
         <title>Hugh’s Vlog</title>
@@ -62,6 +64,7 @@ date: "2018-07-12T04:12:12-05:00"
 3. Marking up a show with six episodes, spread out over two seasons.
 
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <series xml:id="hughs-vlog">
        <title>Hugh’s Vlog</title>

@@ -43,6 +43,7 @@ An arbitrary grouping.
 1. Marking up a curated list of episodes.
 
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <series xml:id="hughs-vlog">
        <title>Hugh’s Vlog</title>
@@ -60,6 +61,7 @@ An arbitrary grouping.
    For this we must import the `xlink` namespace on the root node, in order to use `xlink:href` to target specific `xml:id`s.
 
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml
      xmlns="https://hypervideo.tech/hvml#"
      xmlns:xlink="http://www.w3.org/1999/xlink"

@@ -17,6 +17,7 @@ A <dfn>canonical title</dfn> [SHOULD](https://tools.ietf.org/html/rfc2119#sectio
 For example, a video appearing in the search results of a video portal site might have the <b>presentational title</b> “Last Day of Summer ’16 | Hugh’s Vlog”. The <b>canonical title</b> would be “Last Day of Summer ’16”. The text after the spacer “ | ” denotes the name of the series, and should not be included in an episode’s `<title>`, as it can usually be inferred from the context of the larger document, if authored correctly. To illustrate:
 
 ```xml
+<?xml version="1.0" encoding="UTF-8"?>
 <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
   <group xml:id="hughs-vlog" type="series">
     <title>Hugh’s Vlog</title>
@@ -38,6 +39,7 @@ However, in the case where one is simply archiving the data of a non-<abbr>HVML<
 These two use cases can even be covered in the same document without conflict:
 
 ```xml
+<?xml version="1.0" encoding="UTF-8"?>
 <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
   <group xml:id="hughs-vlog" type="series">
     <title>Hugh’s Vlog</title>

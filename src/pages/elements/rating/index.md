@@ -93,6 +93,7 @@ If `maturity` is omitted on the only `<rating>` for a given `<glossary>`, then t
 1. Defining the content rating for a video.
 
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <video type="feature" xml:id="drive-2011">
        <title>Drive</title>
@@ -105,6 +106,7 @@ If `maturity` is omitted on the only `<rating>` for a given `<glossary>`, then t
 
 2. In order to provide better context, the previous example can be expanded to:
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <video type="feature" xml:id="drive-2011">
        <title>Drive</title>
@@ -128,6 +130,7 @@ If `maturity` is omitted on the only `<rating>` for a given `<glossary>`, then t
 3. By linking via `code`, the applied `rating` references all of the glossary `rating`’s data, as if it were contained inline.
 
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <meta>
        <glossary xml:id="mpaa" for="rating" party="3rd">
@@ -157,6 +160,7 @@ If `maturity` is omitted on the only `<rating>` for a given `<glossary>`, then t
 4. To disambiguate between clashing codes, the applied `rating` uses <b>glossary scoping</b>.
 
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <meta>
        <glossary xml:id="mpaa" for="rating" party="3rd">
@@ -189,6 +193,7 @@ If `maturity` is omitted on the only `<rating>` for a given `<glossary>`, then t
 5. Alternatively, `rating`s can link to glossary definitions by ID. This requires importing the `xlink` namespace on the root node.
 
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml
      xmlns="https://hypervideo.tech/hvml#"
      xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -222,6 +227,7 @@ If `maturity` is omitted on the only `<rating>` for a given `<glossary>`, then t
 6. Defining a glossary of three `profanity` content ratings, on a scale from least profane to most profane.
 
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <glossary xml:id="yt" for="ratings">
        <title>YouTube Content Rating</title>
@@ -244,6 +250,7 @@ If `maturity` is omitted on the only `<rating>` for a given `<glossary>`, then t
 7. Defining a glossary of three `profanity` content ratings, on a scale from least profane to most profane, with explicit maturity ranking.
 
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <glossary xml:id="yt" for="ratings">
        <title>YouTube Content Rating</title>
@@ -266,6 +273,7 @@ If `maturity` is omitted on the only `<rating>` for a given `<glossary>`, then t
 8. Defining a binary content rating, with an implied maturity of `1`.
 
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <glossary xml:id="pal" for="ratings">
        <title>Parental Advisory Label</title>

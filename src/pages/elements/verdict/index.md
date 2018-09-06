@@ -36,6 +36,7 @@ A predefined verdict with which a reviewer can rank a piece of content.
 
 1.
    ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
    <hvml xmlns="https://hypervideo.tech/hvml#" xml:lang="en">
      <glossary xml:id="nstv" for="score" party="1st">
        <title>No Spoon TV Verdicts</title>
