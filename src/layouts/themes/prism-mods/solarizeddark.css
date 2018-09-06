@@ -60,7 +60,8 @@ pre[class*="language-"],
 .token.punctuation {
   /* Blue */
   color: hsl(-150, 70%, 40%);
-  color: hsl(-150, 100%, 40%)
+  color: hsl(-150, 100%, 40%);
+  color: #06c; /* https://github.com/gatsbyjs/gatsby/issues/7915 */
 }
 
 .token.keyword,
