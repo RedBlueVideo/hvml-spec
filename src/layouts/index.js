@@ -95,8 +95,13 @@ class Template extends React.Component {
             textAlign: 'center',
             ...scale(0.00625),
             marginTop: rhythm(3),
-            marginBottom: rhythm(-.75)
+            marginBottom: rhythm(-.75),
+            lineHeight: 1.5
           } }>
+            <p style={ {
+              fontSize: '0.95rem',
+              marginBottom: rhythm(0.333333)
+            } }><a href="https://github.com/RedBlueVideo/hvml-spec">GitHub</a> | <a href="https://twitter.com/HypervideoML">Twitter</a></p>
             <p><small>Copyright © { (() => {
               const year = ( new Date() ).getFullYear();
               // console.log( )
