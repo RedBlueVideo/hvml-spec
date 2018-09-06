@@ -37,21 +37,20 @@ pre[class*="language-"] {
 .token.string,
 .token.doctype,
 .token.regex,
-.token.attr-value,
-.token.prolog,
-.token.doctype {
+.token.attr-value {
   /* Teal */
   color: hsl(190, 60%, 50%);
   color: hsl(190, 80%, 50%);
 }
 
-code[class*="language-"].language-text,
-.token.prolog {
+code[class*="language-"].language-text {
+  /* Muted Teal */
   color: hsl(190, 60%, 50%);
 }
 
 .token.comment,
-.token.doctype {
+.token.doctype,
+.token.prolog {
   opacity: .8;
 }
 
@@ -99,11 +98,11 @@ ins {
 }
 
 /* .token.attr-name, */
-code[class*="language-"],
-pre[class*="language-"],
+/* .token.punctuation, */
 .token.doctype,
 .token.comment,
-.token.cdata {
+.token.cdata,
+.token.prolog {
   /* color: #586e75; */
   color: hsl(194, 14%, 60%);
 }
