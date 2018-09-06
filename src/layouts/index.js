@@ -3,8 +3,10 @@ import Link from 'gatsby-link'
 
 import { rhythm, scale } from '../utils/typography'
 
-import 'prismjs/themes/prism-solarizedlight.css'
-import './themes/prism-mods/solarizedlight.css'
+// import 'prismjs/themes/prism-solarizedlight.css'
+import 'prism-solarized-dark/prism-solarizeddark.css'
+// import './themes/prism-mods/solarizedlight.css'
+import './themes/prism-mods/solarizeddark.css'
 import './style.css'
 
 // import 'prism-themes/themes/prism-a11y-dark.css'

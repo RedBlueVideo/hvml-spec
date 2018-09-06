@@ -1,0 +1,88 @@
+:not(pre) > code[class*="language-"] {
+  padding: .25rem .5rem;
+  text-shadow: none;
+}
+
+h1 > code[class*="language-"],
+h2 > code[class*="language-"],
+h3 > code[class*="language-"],
+h4 > code[class*="language-"],
+h5 > code[class*="language-"],
+h6 > code[class*="language-"],
+a > code[class*="language-"] {
+  /* font-size: inherit; */
+	font-size: 0.8em;
+}
+
+pre[class*="language-"] {
+  margin: 1.25rem 0
+}
+
+.token.number,
+.token.string,
+.token.doctype,
+.token.regex,
+.token.attr-value,
+.token.prolog,
+.token.doctype {
+  /* Teal */
+  color: hsl(190, 60%, 50%);
+  color: hsl(190, 100%, 50%);
+}
+
+code[class*="language-"],
+pre[class*="language-"],
+.token.prolog {
+  color: hsl(190, 60%, 50%);
+}
+
+.token.comment,
+.token.doctype {
+  opacity: .7;
+}
+
+.token.selector,
+.token.tag {
+  /* Baby Blue */
+  color: hsl(205, 69%, 49%);
+  color: hsl(205, 100%, 49%);
+}
+
+.token.attr-name,
+.token.variable,
+.token.class-name {
+  /* Fuschia */
+  color: hsl(310, 60%, 45%);
+  color: hsl(310, 100%, 45%);
+}
+
+pre[class*="language-"],
+.token.punctuation {
+  /* Blue */
+  color: hsl(-150, 70%, 40%);
+  color: hsl(-150, 100%, 40%)
+}
+
+.token.keyword,
+.token.operator {
+  /* Neon sea green */
+  color: hsla(160, 130%, 50%, 0.9);
+  color: hsla(160, 130%, 100%, 0.9);
+}
+
+/* ins [class^="hljs"],
+ins {
+  color: hsla(200, 30%, 40%);
+} */
+
+ins {
+  /* white-space: pre-line; */
+}
+
+/* .token.attr-name, */
+.token.doctype,
+.token.comment,
+.token.cdata {
+  /* color: #586e75; */
+  color: hsl(194, 14%, 60%);
+}
