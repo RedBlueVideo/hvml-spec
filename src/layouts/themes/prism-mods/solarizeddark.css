@@ -1,6 +1,7 @@
 :not(pre) > code[class*="language-"] {
   padding: .25rem .5rem;
   text-shadow: none;
+  vertical-align: middle;
 }
 
 h1 > code[class*="language-"],
@@ -12,6 +13,20 @@ h6 > code[class*="language-"],
 a > code[class*="language-"] {
   /* font-size: inherit; */
 	font-size: 0.8em;
+}
+
+code[class*="language-"] {
+  font-family:
+    'Courier Prime Code',
+    'Courier Prime',
+    Consolas,
+    Monaco,
+    'Andale Mono',
+    'Ubuntu Mono',
+    'Courier New',
+    Courier,
+    monospace
+  ;
 }
 
 pre[class*="language-"] {

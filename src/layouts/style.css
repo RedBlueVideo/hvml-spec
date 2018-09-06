@@ -37,3 +37,12 @@ footer > p {
 abbr:not([title]) {
   cursor: inherit;
 }
+
+@font-face {
+  font-family: 'Courier Prime Code';
+  src: /*local('Courier Prime Code Regular'),*/
+       url('CourierPrimeCode-Regular.woff2') format('woff2'),
+       url('CourierPrimeCode-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
