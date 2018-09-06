@@ -71,8 +71,9 @@ class Template extends React.Component {
             marginLeft: 'auto',
             marginRight: 'auto',
             // maxWidth: rhythm(24.68355),
-            maxWidth: '39rem',
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            width: '39rem',
+            maxWidth: '80%',
+            padding: `${rhythm(1.5)} 0`, // ${rhythm(3 / 4)}
           }}
         >
           <header className="branding" style={ {
