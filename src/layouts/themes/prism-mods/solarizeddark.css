@@ -27,7 +27,7 @@ pre[class*="language-"] {
 .token.doctype {
   /* Teal */
   color: hsl(190, 60%, 50%);
-  color: hsl(190, 100%, 50%);
+  color: hsl(190, 80%, 50%);
 }
 
 code[class*="language-"],
@@ -37,15 +37,16 @@ pre[class*="language-"],
 }
 
 .token.comment,
-.token.doctype {
-  opacity: .7;
+.token.doctype,
+.token.namespace {
+  opacity: .8;
 }
 
 .token.selector,
 .token.tag {
   /* Baby Blue */
   color: hsl(205, 69%, 49%);
-  color: hsl(205, 100%, 49%);
+  color: hsl(205, 80%, 49%);
 }
 
 .token.attr-name,
@@ -53,22 +54,22 @@ pre[class*="language-"],
 .token.class-name {
   /* Fuschia */
   color: hsl(310, 60%, 45%);
-  color: hsl(310, 100%, 45%);
+  color: hsl(310, 80%, 45%);
 }
 
 pre[class*="language-"],
 .token.punctuation {
   /* Blue */
   color: hsl(-150, 70%, 40%);
-  color: hsl(-150, 100%, 40%);
-  color: #06c; /* https://github.com/gatsbyjs/gatsby/issues/7915 */
+  color: hsl(-150, 80%, 40%);
+  color: #1466b8; /* https://github.com/gatsbyjs/gatsby/issues/7915 */
 }
 
 .token.keyword,
 .token.operator {
   /* Neon sea green */
   color: hsla(160, 130%, 50%, 0.9);
-  color: hsla(160, 130%, 100%, 0.9);
+  color: hsla(160, 130%, 80%, 0.9);
 }
 
 /* ins [class^="hljs"],
