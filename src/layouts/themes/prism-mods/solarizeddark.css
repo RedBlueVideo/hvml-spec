@@ -30,6 +30,7 @@ pre[class*="language-"] {
   color: hsl(190, 80%, 50%);
 }
 
+code[class*="language-"].language-text,
 .token.prolog {
   color: hsl(190, 60%, 50%);
 }
