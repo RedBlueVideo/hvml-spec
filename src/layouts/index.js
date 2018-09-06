@@ -63,34 +63,52 @@ class Template extends React.Component {
     )
 
     return (
-      <div
-        style={{
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          // maxWidth: rhythm(24.68355),
-          maxWidth: '39rem',
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <header className="branding" style={ {
-          marginBottom: rhythm(1.5)
-        } }>
-          <Link
-            className="homepage-link"
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-              backgroundImage: 'none',
-            }}
-            to={'/'}
-          >
-            {logo}
-          </Link>
-          {header}
-        </header>
-        {children()}
-      </div>
+      <React.Fragment>
+        <div
+          style={{
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            // maxWidth: rhythm(24.68355),
+            maxWidth: '39rem',
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          }}
+        >
+          <header className="branding" style={ {
+            marginBottom: rhythm(1.5)
+          } }>
+            <Link
+              className="homepage-link"
+              style={{
+                boxShadow: 'none',
+                textDecoration: 'none',
+                color: 'inherit',
+                backgroundImage: 'none',
+              }}
+              to={'/'}
+            >
+              {logo}
+            </Link>
+            {header}
+          </header>
+          {children()}
+          <footer style={ {
+            textAlign: 'center',
+            ...scale(0.00625),
+            marginTop: rhythm(3),
+            marginBottom: rhythm(-.75)
+          } }>
+            <p><small>Copyright © { (() => {
+              const year = ( new Date() ).getFullYear();
+              // console.log( )
+              if ( year > 2018 ) {
+                return `2018—${year}`
+              }
+              return year;
+            })() } HVML Working Group (<a href="https://hughguiney.com">Hugh Guiney</a> <abbr title="and others">et al.</abbr>).</small></p>
+            <p><small>This work is licensed under the <a rel="license" href="https://github.com/RedBlueVideo/hvml-spec/blob/master/LICENSE.txt"><abbr>GNU</abbr> General Public License v3.0</a>.</small></p>
+          </footer>
+        </div>
+      </React.Fragment>
     )
   }
 }
