@@ -11,7 +11,7 @@
 }
 
 /* CRT effect by Alec Lownes: http://aleclownes.com/2017/02/01/crt-display.html */
-:not(pre) > code[class*="language-"]::after,
+/* :not(pre) > code[class*="language-"]::after,
 pre[class*="language-"]::after {
   content: " ";
   display: block;
@@ -24,7 +24,7 @@ pre[class*="language-"]::after {
   opacity: 0;
   z-index: 2;
   pointer-events: none;
-  /* animation: flicker 9.6s infinite; */
+  /* animation: flicker 9.6s infinite; *
   width: 150%;
 }
 :not(pre) > code[class*="language-"]::before,
@@ -51,7 +51,7 @@ pre[class*="language-"]::before {
 pre[class*="language-"] {
   position: relative;
   text-shadow: 0.08084290417898504px 0 1px rgba(0,30,255,0.5), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-}
+} */
 
 h1 > code[class*="language-"],
 h2 > code[class*="language-"],
