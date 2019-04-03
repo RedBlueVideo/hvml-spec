@@ -49,7 +49,7 @@ The `type` attribute accepts one or more of the following values as a space-sepa
 These values can be combined, in any order, in the following ways to derive additional meanings:
 
 - `narrative documentary`: a documentary with fictionalized elements. This does not refer to disputed or exaggerated claims made in investigative journalism, but rather to hybrid fiction–nonfiction, such as a biopic portrayed by actors that also includes interviews with real-life people relating to the story;
-- `personal documentary`: a self-authored vlog (video blog);
+- `personal documentary`: a self-authored <dfn>vlog</dfn> (video blog) episode;
 - `personal ad`: an advertisement for oneself, such as a political campaign commercial, or a video job application;
 - `documentary ad`: an advertisement presented as educational content about a particular topic, e.g. “native advertising”;
 - `historical ad`: a commercial for a defunct product or service, or a commercial that is no longer running;
