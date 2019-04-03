@@ -38,6 +38,10 @@ abbr:not([title]) {
   cursor: inherit;
 }
 
+dfn {
+  font-weight: normal;
+}
+
 @font-face {
   font-family: 'Courier Prime Code';
   src: /*local('Courier Prime Code Regular'),*/
