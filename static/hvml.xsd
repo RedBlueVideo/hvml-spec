@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="video" minOccurs="0" maxOccurs="unbounded">
+    <xs:complexType>
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="episode" type="xs:integer" />
+      <xs:element name="recorded" type="xs:date" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="description">
+    <xs:complexType></xs:complexType>
+  </xs:element>
+
+  <xs:element name="showing">
+    <xs:complexType></xs:complexType>
+  </xs:element>
+
+  <xs:element name="presentation">
+    <xs:complexType></xs:complexType>
+  </xs:element>
+</xs:schema>
