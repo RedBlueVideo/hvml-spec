@@ -1,0 +1,157 @@
+@media only screen and (max-width: 678px) {
+  code[class*="language-"], pre[class*="language-"] {
+    white-space: pre-line;
+  }
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: .25rem .5rem;
+  text-shadow: none;
+  vertical-align: middle;
+}
+
+/* CRT effect by Alec Lownes: http://aleclownes.com/2017/02/01/crt-display.html */
+/* :not(pre) > code[class*="language-"]::after,
+pre[class*="language-"]::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  /* animation: flicker 9.6s infinite; *
+  width: 150%;
+}
+:not(pre) > code[class*="language-"]::before,
+pre[class*="language-"]::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+pre[class*="language-"]::before {
+  width: 150%;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  position: relative;
+  text-shadow: 0.08084290417898504px 0 1px rgba(0,30,255,0.5), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+} */
+
+h1 > code[class*="language-"],
+h2 > code[class*="language-"],
+h3 > code[class*="language-"],
+h4 > code[class*="language-"],
+h5 > code[class*="language-"],
+h6 > code[class*="language-"],
+a > code[class*="language-"] {
+  /* font-size: inherit; */
+	font-size: 0.8em;
+}
+
+code[class*="language-"] {
+  font-family:
+    'Courier Prime Code',
+    'Courier Prime',
+    Consolas,
+    Monaco,
+    'Andale Mono',
+    'Ubuntu Mono',
+    'Courier New',
+    Courier,
+    monospace
+  ;
+}
+
+pre[class*="language-"] {
+  margin: 1.25rem 0
+}
+
+.token.number,
+.token.string,
+.token.doctype,
+.token.regex,
+.token.attr-value {
+  /* Teal */
+  color: hsl(190, 60%, 50%);
+  color: hsl(190, 80%, 50%);
+}
+
+code[class*="language-"].language-text {
+  /* Muted Teal */
+  color: hsl(190, 60%, 50%);
+}
+
+.token.comment,
+.token.doctype,
+.token.prolog {
+  opacity: .8;
+}
+
+.token.namespace {
+  opacity: inherit;
+}
+
+.token.selector,
+.token.tag {
+  /* Baby Blue */
+  color: hsl(205, 69%, 49%);
+  color: hsl(205, 80%, 49%);
+}
+
+.token.attr-name,
+.token.variable,
+.token.class-name {
+  /* Fuschia */
+  color: hsl(310, 60%, 45%);
+  color: hsl(310, 80%, 45%);
+}
+
+pre[class*="language-"],
+.token.punctuation {
+  /* Blue */
+  color: hsl(-150, 70%, 40%);
+  color: hsl(-150, 80%, 40%);
+  color: #1466b8; /* https://github.com/gatsbyjs/gatsby/issues/7915 */
+}
+
+.token.keyword,
+.token.operator {
+  /* Neon sea green */
+  color: hsla(160, 130%, 50%, 0.9);
+  color: hsla(160, 130%, 80%, 0.9);
+}
+
+/* ins [class^="hljs"],
+ins {
+  color: hsla(200, 30%, 40%);
+} */
+
+ins {
+  /* white-space: pre-line; */
+}
+
+/* .token.attr-name, */
+/* .token.punctuation, */
+.token.doctype,
+.token.comment,
+.token.cdata,
+.token.prolog {
+  /* color: #586e75; */
+  color: hsl(194, 14%, 60%);
+}

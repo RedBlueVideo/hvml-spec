@@ -1,0 +1,7 @@
+pre[class*="language-"] {
+	background: black;
+}
+
+:not(pre) > code[class*="language-"] {
+	padding: .25rem .5rem
+}

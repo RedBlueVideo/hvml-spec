@@ -1,0 +1,52 @@
+.branding {
+  text-align: center;
+}
+
+.branding__name {
+  margin: 0 auto;
+}
+
+.homepage-link {
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+@media only screen and (min-width: 540px) {
+  .branding {
+    text-align: left;
+  }
+
+  .homepage-link, .branding__name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .branding__name {
+    margin: 0 auto 0 1.25rem;
+  }
+
+  .homepage-link {
+    margin-bottom: 0;
+  }
+}
+
+footer > p {
+  margin-bottom: 0;
+}
+
+abbr:not([title]) {
+  cursor: inherit;
+}
+
+dfn {
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Courier Prime Code';
+  src: /*local('Courier Prime Code Regular'),*/
+       url('CourierPrimeCode-Regular.woff2') format('woff2'),
+       url('CourierPrimeCode-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
