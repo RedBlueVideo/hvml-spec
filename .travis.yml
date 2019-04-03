@@ -2,11 +2,9 @@ language: node_js
 
 os:
   - linux
-  - osx
 
 node_js:
   - "stable"
-  - "lts/*"
 
 branches:
   only:
@@ -17,11 +15,10 @@ cache:
     - node_modules
 
 before_script:
-  - "npm i -g gatsby-cli"
+  - npm i -g gatsby-cli
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install yarn; fi
-  - "yarn"
+  - yarn
 
 script:
-  - yarn install
-  - yarn run lint
+  - yarn lint
   - gatsby build
